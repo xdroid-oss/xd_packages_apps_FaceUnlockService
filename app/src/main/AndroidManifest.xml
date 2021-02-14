@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.pixelexperience.faceunlock">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.MANAGE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC_INTERNAL" />
+    <uses-feature android:name="org.pixelexperience.faceunlock" android:required="true" />
+
+    <application
+        android:name="org.pixelexperience.faceunlock.FaceApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_face_unlock"
+        android:label="@string/app_name"
+        android:resizeableActivity="false"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="org.pixelexperience.faceunlock.SetupFaceIntroActivity"
+            android:enabled="true"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/title_activity_face_intro"
+            android:screenOrientation="portrait"
+            android:theme="@style/SettingsTheme" />
+        <activity
+            android:name="org.pixelexperience.faceunlock.FaceEnrollActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/SettingsTheme" />
+        <activity
+            android:name="org.pixelexperience.faceunlock.FaceFinish"
+            android:excludeFromRecents="true"
+            android:label="@string/facelock_setup_notification_text"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/SettingsTheme" />
+        <activity
+            android:name="org.pixelexperience.faceunlock.FaceTryAgain"
+            android:excludeFromRecents="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/SettingsTheme" />
+        <activity
+            android:name="org.pixelexperience.faceunlock.FaceValuePropActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/SettingsTheme" />
+        <activity
+            android:name="org.pixelexperience.faceunlock.FaceUpgradeFinish"
+            android:excludeFromRecents="true"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/SettingsTheme" />
+
+        <service
+            android:name="org.pixelexperience.faceunlock.service.FaceAuthService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.MANAGE_BIOMETRIC">
+            <intent-filter>
+                <action android:name="org.pixelexperience.faceunlock.BIND" />
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="org.pixelexperience.faceunlock.util.NotificationAlarm$NotiAlarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="org.pixelexperience.faceunlock.NOTIFICATION_PROP_ALARM" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

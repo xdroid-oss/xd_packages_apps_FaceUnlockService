@@ -1,0 +1,49 @@
+
+android_app {
+    name: "FaceUnlockService",
+
+    resource_dirs: ["res"],
+
+    srcs: [
+        "java/**/*.java",
+    ],
+
+    product_specific: true,
+    privileged: true,
+    platform_apis: true,
+    certificate: "platform",
+
+    optimize: {
+        enabled: false,
+    },
+
+    static_libs: [
+        "androidx.annotation_annotation",
+        "androidx.appcompat_appcompat",
+        "faceunlock_framework",
+    ],
+    required: [
+        "privapp-permissions-org.pixelexperience.faceunlock",
+        "hiddenapi-whitelist-org.pixelexperience.faceunlock",
+        "libarcsoft_faceid",
+        "libarcsoft-lib",
+        "libarcsoftbase",
+        "libmpbase",
+    ],
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-org.pixelexperience.faceunlock",
+    product_specific: true,
+    src: "privapp-permissions-org.pixelexperience.faceunlock.xml",
+    sub_dir: "permissions",
+    filename_from_src: true,
+}
+
+prebuilt_etc {
+    name: "hiddenapi-whitelist-org.pixelexperience.faceunlock",
+    product_specific: true,
+    src: "hiddenapi-whitelist-org.pixelexperience.faceunlock.xml",
+    sub_dir: "sysconfig",
+    filename_from_src: true,
+}

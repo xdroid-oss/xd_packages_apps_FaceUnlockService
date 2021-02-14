@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#ff00817a</color>
+    <color name="parasailing_700">#ff00817a</color>
+    <color name="parasailing_500">#ff00a09b</color>
+    <color name="dark_blue">#ff008cff</color>
+    <color name="suw_flat_button_highlight">#1f000000</color>
+    <color name="positive_button_text">@android:color/white</color>
+    <color name="white_32_overlay">#51ffffff</color>
+    <color name="enroll_progress_bar">#ffcdd4d8</color>
+    <color name="circle_progress_color">#ff00a09b</color>
+</resources>
