@@ -35,10 +35,10 @@ import java.util.Random;
 public class FaceAuthService extends Service {
     private static final String ALARM_FAIL_TIMEOUT_LOCKOUT = "org.pixelexperience.faceunlock.ACTION_LOCKOUT_RESET";
     private static final String ALARM_TIMEOUT_FREEZED = "org.pixelexperience.faceunlock.freezedtimeout";
-    private static final long DEFAULT_IDLE_TIMEOUT_MS = 14400000;
-    private static final long FAIL_LOCKOUT_TIMEOUT_MS = 30000;
-    private static final int MAX_FAILED_ATTEMPTS_LOCKOUT_PERMANENT = 3;
-    private static final int MAX_FAILED_ATTEMPTS_LOCKOUT_TIMED = 3;
+    private static final long DEFAULT_IDLE_TIMEOUT_MS = 28800000; // 8 hours
+    private static final long FAIL_LOCKOUT_TIMEOUT_MS = 30000; // 30 seconds
+    private static final int MAX_FAILED_ATTEMPTS_LOCKOUT_PERMANENT = 10;
+    private static final int MAX_FAILED_ATTEMPTS_LOCKOUT_TIMED = 5;
     private static final int MSG_CHALLENGE_TIMEOUT = 100;
     private static final String TAG = FaceAuthService.class.getName();
     private AlarmManager mAlarmManager;
@@ -52,10 +52,19 @@ public class FaceAuthService extends Service {
     private ArcImpl mFaceAuth;
     private PendingIntent mIdleTimeoutIntent;
     private Boolean mLockout = false;
-    private final BroadcastReceiver mTimeoutBroadcastReciever = new BroadcastReceiver() {
+    private PendingIntent mLockoutTimeoutIntent;
+    private IFaceServiceReceiver mFaceReceiver;
+    private boolean mOnIdleTimer = false;
+    private boolean mOnLockoutTimer = false;
+    private FaceAuthServiceWrapper mService;
+    private SharedUtil mShareUtil;
+    private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             String action = intent.getAction();
+            if (Util.DEBUG) {
+                Log.d(FaceAuthService.TAG, "OnReceive intent = " + intent);
+            }
             if (action.equals(FaceAuthService.ALARM_TIMEOUT_FREEZED)) {
                 Log.d(FaceAuthService.TAG, "ALARM_TIMEOUT_FREEZED");
                 synchronized (mLockout) {
@@ -63,6 +72,7 @@ public class FaceAuthService extends Service {
                 }
             } else if (action.equals(FaceAuthService.ALARM_FAIL_TIMEOUT_LOCKOUT)) {
                 Log.d(FaceAuthService.TAG, "ALARM_FAIL_TIMEOUT_LOCKOUT");
+                cancelLockoutTimer();
                 synchronized (mLockout) {
                     mLockout = false;
                 }
@@ -70,26 +80,12 @@ public class FaceAuthService extends Service {
                     mAuthErrorCount = 0;
                 }
             }
-        }
-    };
-    private PendingIntent mLockoutTimeoutIntent;
-    private IFaceServiceReceiver mFaceReceiver;
-    private boolean mOnIdleTimer = false;
-    private boolean mOnLockoutTimer = false;
-    private FaceAuthServiceWrapper mService;
-    private SharedUtil mShareUtil;
-    private final BroadcastReceiver mScreenReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (Util.DEBUG) {
-                Log.d(FaceAuthService.TAG, "OnReceive intent = " + intent);
-            }
             if (mShareUtil.getIntValueByKey(AppConstants.SHARED_KEY_FACE_ID) > -1) {
-                if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
+                if (action.equals(Intent.ACTION_SCREEN_OFF)) {
                     if (!mOnIdleTimer) {
                         startIdleTimer();
                     }
-                } else if (intent.getAction().equals(Intent.ACTION_USER_PRESENT)) {
+                } else if (action.equals(Intent.ACTION_USER_PRESENT)) {
                     cancelIdleTimer();
                     resetLockoutCount();
                 }
@@ -133,10 +129,13 @@ public class FaceAuthService extends Service {
         }
 
         @Override
-        public void onTimeout(boolean z) {
+        public void onTimeout(boolean withFace) {
+            if (Util.DEBUG){
+                Log.d(TAG, "onTimeout, withFace=" + withFace);
+            }
             try {
                 mFaceReceiver.onAuthenticated(0, -1, mShareUtil.getByteArrayValueByKey(AppConstants.SHARED_KEY_ENROLL_TOKEN));
-                if (z) {
+                if (withFace) {
                     increaseAndCheckLockout();
                 }
                 stopAuthrate();
@@ -266,12 +265,11 @@ public class FaceAuthService extends Service {
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(ALARM_TIMEOUT_FREEZED);
         intentFilter.addAction(ALARM_FAIL_TIMEOUT_LOCKOUT);
-        registerReceiver(mTimeoutBroadcastReciever, intentFilter);
-        intentFilter = new IntentFilter();
         intentFilter.addAction(Intent.ACTION_SCREEN_OFF);
         intentFilter.addAction(Intent.ACTION_USER_PRESENT);
+        intentFilter.addAction(Intent.ACTION_USER_UNLOCKED);
         intentFilter.setPriority(IntentFilter.SYSTEM_HIGH_PRIORITY);
-        registerReceiver(mScreenReceiver, intentFilter);
+        registerReceiver(mReceiver, intentFilter);
         if (Util.DEBUG) {
             Log.d(TAG, "OnCreate end");
         }
@@ -284,8 +282,7 @@ public class FaceAuthService extends Service {
             Log.d(TAG, "onDestroy");
         }
         mFaceAuth.release();
-        unregisterReceiver(mTimeoutBroadcastReciever);
-        unregisterReceiver(mScreenReceiver);
+        unregisterReceiver(mReceiver);
     }
 
     private void stopEnroll() {
@@ -350,9 +347,13 @@ public class FaceAuthService extends Service {
     }
 
     private void increaseAndCheckLockout() {
+        if (mOnLockoutTimer){
+            return;
+        }
         synchronized (mAuthErrorCount) {
-            mAuthErrorCount = mAuthErrorCount + 1;
-            mAuthErrorThrottleCount = mAuthErrorThrottleCount + 1;
+            mAuthErrorCount += 1;
+            mAuthErrorThrottleCount += 1;
+            Log.d(TAG, "increaseAndCheckLockout, mAuthErrorCount=" + mAuthErrorCount + ", mAuthErrorThrottleCount=" + mAuthErrorThrottleCount);
             if (mAuthErrorThrottleCount >= MAX_FAILED_ATTEMPTS_LOCKOUT_PERMANENT) {
                 synchronized (mLockout) {
                     Log.d(TAG, "Too many attempts, lockout permanent");
@@ -373,6 +374,7 @@ public class FaceAuthService extends Service {
         synchronized (mAuthErrorCount) {
             mAuthErrorCount = 0;
             mAuthErrorThrottleCount = 0;
+            mLockout = false;
         }
         cancelLockoutTimer();
     }
