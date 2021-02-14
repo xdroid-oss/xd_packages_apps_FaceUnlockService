@@ -35,7 +35,7 @@ import java.util.Random;
 public class FaceAuthService extends Service {
     private static final String ALARM_FAIL_TIMEOUT_LOCKOUT = "org.pixelexperience.faceunlock.ACTION_LOCKOUT_RESET";
     private static final String ALARM_TIMEOUT_FREEZED = "org.pixelexperience.faceunlock.freezedtimeout";
-    private static final long DEFAULT_IDLE_TIMEOUT_MS = 28800000; // 8 hours
+    private static final long DEFAULT_IDLE_TIMEOUT_MS = 3600000 * 6; // 6 hours
     private static final long FAIL_LOCKOUT_TIMEOUT_MS = 30000; // 30 seconds
     private static final int MAX_FAILED_ATTEMPTS_LOCKOUT_PERMANENT = 10;
     private static final int MAX_FAILED_ATTEMPTS_LOCKOUT_TIMED = 5;
