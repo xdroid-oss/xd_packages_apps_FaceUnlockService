@@ -6,6 +6,8 @@ import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
 
+import org.pixelexperience.faceunlock.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +26,10 @@ public class CameraUtil {
     }
 
     public static int getFrontFacingCameraId(Context context) {
+        int overrideCamId = context.getResources().getInteger(R.integer.override_front_cam_id);
+        if (overrideCamId != -1){
+            return overrideCamId;
+        }
         try {
             CameraManager cameraManager = context.getSystemService(CameraManager.class);
             String cameraId;
