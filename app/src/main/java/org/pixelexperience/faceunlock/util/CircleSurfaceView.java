@@ -41,7 +41,7 @@ public class CircleSurfaceView extends SurfaceView {
         paint.setAntiAlias(true);
         paint.setColor(getContext().getColor(R.color.enroll_progress_bar));
         canvas.drawArc(rectF, 270.0f, 360.0f, true, paint);
-        paint.setColor(getContext().getColor(R.color.circle_progress_color));
+        paint.setColor(getContext().getColor(R.color.theme_color));
         canvas.drawArc(rectF, 270.0f, m_progress * 3.6f, true, paint);
         Path path = new Path();
         path.addCircle(measuredWidth, measuredHeight, min * 0.95f, Path.Direction.CCW);

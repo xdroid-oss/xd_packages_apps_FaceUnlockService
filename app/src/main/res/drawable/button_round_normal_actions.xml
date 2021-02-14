@@ -3,7 +3,7 @@
     android:shape="rectangle">
     <stroke
         android:width="@dimen/round_button_stroke_width"
-        android:color="@color/parasailing_500" />
+        android:color="@color/theme_color" />
     <corners android:radius="@dimen/round_button_corner_radius" />
-    <solid android:color="@color/parasailing_500" />
+    <solid android:color="@color/theme_color" />
 </shape>

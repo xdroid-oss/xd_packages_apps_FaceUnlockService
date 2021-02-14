@@ -12,7 +12,7 @@
         android:layout_marginEnd="32.0dip"
         android:layout_marginBottom="24.0dip"
         android:text="@string/upgrade_finish_title"
-        android:textColor="@color/parasailing_500"
+        android:textColor="@color/theme_color"
         android:textIsSelectable="false"
         android:textSize="24.0sp"
         android:textStyle="bold" />

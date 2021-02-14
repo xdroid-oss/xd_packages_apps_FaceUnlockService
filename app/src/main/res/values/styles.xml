@@ -16,9 +16,9 @@
 
     <style name="SettingsTheme" parent="@android:style/Theme.DeviceDefault.Settings">
         <item name="android:windowNoTitle">true</item>
-        <item name="android:colorPrimary">@color/parasailing_700</item>
-        <item name="android:colorPrimaryDark">@color/parasailing_700</item>
-        <item name="android:colorSecondary">@color/parasailing_700</item>
+        <item name="android:colorPrimary">@color/theme_color</item>
+        <item name="android:colorPrimaryDark">@color/theme_color</item>
+        <item name="android:colorSecondary">@color/theme_color</item>
     </style>
 
     <style name="SuwGlifButton.Primary" parent="@android:style/Widget.Material.Button.Colored">
@@ -33,7 +33,7 @@
     <style name="SuwGlifButton.Secondary" parent="@android:style/Widget.Material.Button.Borderless.Colored">
         <item name="android:theme">@style/SuwGlifButton.Secondary</item>
         <item name="android:buttonStyle">@style/SuwGlifButton.Secondary</item>
-        <item name="android:textColor">@color/parasailing_500</item>
+        <item name="android:textColor">@color/theme_color</item>
         <item name="android:paddingLeft">@dimen/suw_glif_button_padding</item>
         <item name="android:paddingRight">@dimen/suw_glif_button_padding</item>
         <item name="android:minWidth">0.0dip</item>
