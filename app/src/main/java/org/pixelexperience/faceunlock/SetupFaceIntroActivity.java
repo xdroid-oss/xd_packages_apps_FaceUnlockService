@@ -31,7 +31,7 @@ public class SetupFaceIntroActivity extends FaceBaseActivity {
     @Override
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        NotificationUtils.cancelUpdateNotification(this);
+        NotificationUtils.cancelNotification(this);
         FaceManager faceManager = getSystemService(FaceManager.class);
         if (faceManager.hasEnrolledTemplates()) {
             Log.e(TAG, "Has enrolled face! return!");

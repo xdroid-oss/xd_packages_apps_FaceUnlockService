@@ -27,7 +27,7 @@ public class FaceApplication extends Application {
             if (Util.DEBUG) {
                 Log.d(FaceApplication.TAG, "mReceiver Received intent with action = " + action);
             }
-            if (intent.getAction().equals(Intent.ACTION_USER_UNLOCKED)) {
+            if (intent.getAction().equals(Intent.ACTION_USER_PRESENT)) {
                 NotificationUtils.checkAndShowNotification(context);
             }
         }
@@ -44,7 +44,10 @@ public class FaceApplication extends Application {
         }
         super.onCreate();
         mApp = this;
-        registerReceiver(mReceiver, new IntentFilter(Intent.ACTION_USER_UNLOCKED), null, null);
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(Intent.ACTION_USER_PRESENT);
+        intentFilter.setPriority(IntentFilter.SYSTEM_HIGH_PRIORITY);
+        registerReceiver(mReceiver, intentFilter, null, null);
         SharedUtil sharedUtil = new SharedUtil(getApplicationContext());
         if (!sharedUtil.getBooleanValueByKey(NotificationUtils.FACE_NOTIFICATION_ALARM_READY)) {
             NotificationAlarm.getInstance(getApplicationContext()).init();

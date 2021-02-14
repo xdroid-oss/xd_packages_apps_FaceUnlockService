@@ -16,7 +16,6 @@ public class NotificationUtils {
     public static final String FACE_NOTIFICATION_ALARM_READY = "face_notification_alarm_ready";
     private static final String CHANNEL_ID = "org.pixelexperience.faceunlock";
     private static final String CHANNEL_NAME = "Face Unlock";
-    private static final boolean DEBUG = (!"user".equals(Build.TYPE));
     private static final String FACE_NOTIFICATION_COUNT = "face_notification_count";
     private static final String FACE_UNLOCKINTENT_COUNT = "face_unlockintent_count";
     private static final String TAG = NotificationUtils.class.getSimpleName();
@@ -25,26 +24,26 @@ public class NotificationUtils {
     public static void checkAndShowNotification(Context context) {
         mSharedUtil = new SharedUtil(context);
         if (Util.isFaceUnlockAvailable(context)) {
-            if (DEBUG) {
+            if (Util.DEBUG) {
                 Log.d(TAG, "face unlock has been set");
             }
             cancelNotification(context);
             setNotiCount();
         } else if (Util.isFaceUnlockDisabledByDPM(context)) {
-            if (DEBUG) {
+            if (Util.DEBUG) {
                 Log.d(TAG, "face unlock disabled by DPM");
             }
             cancelNotification(context);
         } else if (!isFirstNotification()) {
-            if (DEBUG) {
+            if (Util.DEBUG) {
                 Log.d(TAG, "not the first time to show the notification");
             }
         } else if (!isAlarmReady()) {
-            if (DEBUG) {
+            if (Util.DEBUG) {
                 Log.d(TAG, "alarm not ready");
             }
         } else if (isUnlockCountReached()) {
-            if (DEBUG) {
+            if (Util.DEBUG) {
                 Log.d(TAG, "unlock intent count reached");
             }
             createNotification(context);
@@ -53,7 +52,7 @@ public class NotificationUtils {
 
     private static boolean isUnlockCountReached() {
         int count = mSharedUtil.getIntValueByKey(FACE_UNLOCKINTENT_COUNT);
-        if (DEBUG) {
+        if (Util.DEBUG) {
             Log.d(TAG, "unlockIntentCount = " + count);
         }
         if (count >= 3) {
@@ -75,17 +74,23 @@ public class NotificationUtils {
         Intent intent = new Intent();
         intent.setAction("android.settings.FACE_SETTINGS");
         intent.addFlags(268435456);
-        notificationManager.notify(1, new Notification.Builder(context, CHANNEL_ID).setSmallIcon(R.drawable.ic_face_auth).setContentTitle(context.getString(R.string.facelock_setup_notification_title)).setContentText(context.getString(R.string.facelock_setup_notification_text)).setAutoCancel(true).setChannelId(CHANNEL_ID).setContentIntent(PendingIntent.getActivity(context, 0, intent, 268435456)).build());
+        notificationManager.notify(1, new Notification.Builder(context, CHANNEL_ID)
+                .setSmallIcon(R.drawable.ic_face_auth)
+                .setContentTitle(context.getString(R.string.facelock_setup_notification_title))
+                .setContentText(context.getString(R.string.facelock_setup_notification_text))
+                .setAutoCancel(true)
+                .setChannelId(CHANNEL_ID)
+                .setContentIntent(PendingIntent.getActivity(context, 0, intent, 268435456)).build());
     }
 
     private static void setNotiCount() {
-        if (DEBUG) {
+        if (Util.DEBUG) {
             Log.d(TAG, "set noti count to 1");
         }
         mSharedUtil.saveIntValue(FACE_NOTIFICATION_COUNT, 1);
     }
 
-    private static void cancelNotification(Context context) {
+    public static void cancelNotification(Context context) {
         ((NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE)).cancel(1);
     }
 
@@ -95,9 +100,5 @@ public class NotificationUtils {
 
     private static boolean isAlarmReady() {
         return mSharedUtil.getBooleanValueByKey(FACE_NOTIFICATION_ALARM_READY);
-    }
-
-    public static void cancelUpdateNotification(Context context) {
-        ((NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE)).cancel(2);
     }
 }

@@ -267,7 +267,6 @@ public class FaceAuthService extends Service {
         intentFilter.addAction(ALARM_FAIL_TIMEOUT_LOCKOUT);
         intentFilter.addAction(Intent.ACTION_SCREEN_OFF);
         intentFilter.addAction(Intent.ACTION_USER_PRESENT);
-        intentFilter.addAction(Intent.ACTION_USER_UNLOCKED);
         intentFilter.setPriority(IntentFilter.SYSTEM_HIGH_PRIORITY);
         registerReceiver(mReceiver, intentFilter);
         if (Util.DEBUG) {
