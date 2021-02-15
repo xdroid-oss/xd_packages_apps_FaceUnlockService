@@ -9,7 +9,7 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
-    <style name="AppTheme.AlertDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+    <style name="AppTheme.AlertDialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
