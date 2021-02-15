@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="org.pixelexperience.faceunlock">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.MANAGE_BIOMETRIC" />
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
     <uses-permission android:name="android.permission.USE_BIOMETRIC_INTERNAL" />
@@ -67,13 +69,5 @@
                 <action android:name="org.pixelexperience.faceunlock.BIND" />
             </intent-filter>
         </service>
-        <receiver
-            android:name="org.pixelexperience.faceunlock.util.NotificationAlarm$NotiAlarmReceiver"
-            android:enabled="true"
-            android:exported="false">
-            <intent-filter android:priority="1000">
-                <action android:name="org.pixelexperience.faceunlock.NOTIFICATION_PROP_ALARM" />
-            </intent-filter>
-        </receiver>
     </application>
 </manifest>
