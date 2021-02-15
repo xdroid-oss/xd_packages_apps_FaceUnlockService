@@ -11,9 +11,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
-import org.pixelexperience.faceunlock.util.NotificationAlarm;
 import org.pixelexperience.faceunlock.util.NotificationUtils;
-import org.pixelexperience.faceunlock.util.SharedUtil;
 import org.pixelexperience.faceunlock.util.Util;
 
 public class FaceApplication extends Application {
@@ -48,10 +46,6 @@ public class FaceApplication extends Application {
         intentFilter.addAction(Intent.ACTION_USER_PRESENT);
         intentFilter.setPriority(IntentFilter.SYSTEM_HIGH_PRIORITY);
         registerReceiver(mReceiver, intentFilter, null, null);
-        SharedUtil sharedUtil = new SharedUtil(getApplicationContext());
-        if (!sharedUtil.getBooleanValueByKey(NotificationUtils.FACE_NOTIFICATION_ALARM_READY)) {
-            NotificationAlarm.getInstance(getApplicationContext()).init();
-        }
         getPackageManager().setComponentEnabledSetting(new ComponentName(this, SetupFaceIntroActivity.class),
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
                 PackageManager.DONT_KILL_APP);

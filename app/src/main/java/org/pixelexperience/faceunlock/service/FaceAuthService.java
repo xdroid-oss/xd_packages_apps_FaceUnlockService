@@ -256,7 +256,7 @@ public class FaceAuthService extends Service {
         mShareUtil = new SharedUtil(this);
         mFaceAuth = new ArcImpl(this);
         mUserId = Util.getUserId(this);
-        if (Util.isFaceUnlockAvailable(this) && Util.isFaceUnlockEnrolled(this)) {
+        if (!Util.isFaceUnlockDisabledByDPM(this) && Util.isFaceUnlockEnrolled(this)) {
             mWorkHandler.post(() -> mFaceAuth.init());
         }
         mAlarmManager = getSystemService(AlarmManager.class);
@@ -402,7 +402,7 @@ public class FaceAuthService extends Service {
                 Log.d(FaceAuthService.TAG, "enroll");
             }
             boolean z = true;
-            if (!Util.isFaceUnlockAvailable(FaceAuthService.this) || mChallenge == 0 || bArr == null) {
+            if (Util.isFaceUnlockDisabledByDPM(FaceAuthService.this) || mChallenge == 0 || bArr == null) {
                 StringBuilder sb = new StringBuilder();
                 sb.append("enroll error ! hasChallenge = ");
                 sb.append(mChallenge != 0);
@@ -463,7 +463,7 @@ public class FaceAuthService extends Service {
             if (Util.DEBUG) {
                 Log.d(FaceAuthService.TAG, "authenticate");
             }
-            if (!Util.isFaceUnlockAvailable(FaceAuthService.this)) {
+            if (Util.isFaceUnlockDisabledByDPM(FaceAuthService.this)) {
                 try {
                     mFaceReceiver.onError(5, 0);
                 } catch (RemoteException e) {

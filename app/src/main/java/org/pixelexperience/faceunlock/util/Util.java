@@ -16,10 +16,6 @@ public class Util {
     public static final boolean DEBUG = true;
     private static final String TAG = Util.class.getSimpleName();
 
-    public static boolean isFaceUnlockAvailable(Context context) {
-        return !isFaceUnlockDisabledByDPM(context);
-    }
-
     public static void setFaceUnlockAvailable(Context context) {
         Settings.setFaceUnlockAvailable(context, isFaceUnlockEnrolled(context) ? 1 : 0);
     }

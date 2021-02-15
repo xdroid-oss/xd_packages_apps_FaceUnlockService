@@ -13,7 +13,6 @@ import android.util.Log;
 import org.pixelexperience.faceunlock.R;
 
 public class NotificationUtils {
-    public static final String FACE_NOTIFICATION_ALARM_READY = "face_notification_alarm_ready";
     private static final String CHANNEL_ID = "org.pixelexperience.faceunlock";
     private static final String CHANNEL_NAME = "Face Unlock";
     private static final String FACE_NOTIFICATION_COUNT = "face_notification_count";
@@ -23,7 +22,7 @@ public class NotificationUtils {
 
     public static void checkAndShowNotification(Context context) {
         mSharedUtil = new SharedUtil(context);
-        if (Util.isFaceUnlockAvailable(context)) {
+        if (Settings.isFaceUnlockAvailable(context)) {
             if (Util.DEBUG) {
                 Log.d(TAG, "face unlock has been set");
             }
@@ -38,10 +37,6 @@ public class NotificationUtils {
             if (Util.DEBUG) {
                 Log.d(TAG, "not the first time to show the notification");
             }
-        } else if (!isAlarmReady()) {
-            if (Util.DEBUG) {
-                Log.d(TAG, "alarm not ready");
-            }
         } else if (isUnlockCountReached()) {
             if (Util.DEBUG) {
                 Log.d(TAG, "unlock intent count reached");
@@ -51,7 +46,7 @@ public class NotificationUtils {
     }
 
     private static boolean isUnlockCountReached() {
-        int count = mSharedUtil.getIntValueByKey(FACE_UNLOCKINTENT_COUNT);
+        int count = mSharedUtil.getIntValueByKey(FACE_UNLOCKINTENT_COUNT, 0);
         if (Util.DEBUG) {
             Log.d(TAG, "unlockIntentCount = " + count);
         }
@@ -96,9 +91,5 @@ public class NotificationUtils {
 
     private static boolean isFirstNotification() {
         return mSharedUtil.getIntValueByKey(FACE_NOTIFICATION_COUNT) <= 0;
-    }
-
-    private static boolean isAlarmReady() {
-        return mSharedUtil.getBooleanValueByKey(FACE_NOTIFICATION_ALARM_READY);
     }
 }

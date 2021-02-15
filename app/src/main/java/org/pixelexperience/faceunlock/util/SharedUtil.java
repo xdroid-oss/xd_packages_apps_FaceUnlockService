@@ -35,8 +35,12 @@ public class SharedUtil {
         edit.commit();
     }
 
+    public int getIntValueByKey(String str, int defValue) {
+        return PreferenceManager.getDefaultSharedPreferences(mContext).getInt(str, defValue);
+    }
+
     public int getIntValueByKey(String str) {
-        return PreferenceManager.getDefaultSharedPreferences(mContext).getInt(str, -1);
+        return getIntValueByKey(str, -1);
     }
 
     @SuppressLint("ApplySharedPref")
