@@ -20,14 +20,12 @@ android_app {
         "androidx.annotation_annotation",
         "androidx.appcompat_appcompat",
         "faceunlock_framework",
+        "faceunlock_vendor_framework",
     ],
     required: [
         "privapp-permissions-org.pixelexperience.faceunlock",
         "hiddenapi-whitelist-org.pixelexperience.faceunlock",
-        "libarcsoft_faceid",
-        "libarcsoft-lib",
-        "libarcsoftbase",
-        "libmpbase",
+        "faceunlock_dependencies",
     ],
 }
 

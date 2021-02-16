@@ -19,15 +19,16 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
+import com.android.internal.util.custom.faceunlock.IFaceService;
+import com.android.internal.util.custom.faceunlock.IFaceServiceReceiver;
+
 import org.pixelexperience.faceunlock.AppConstants;
 import org.pixelexperience.faceunlock.camera.CameraFaceAuthController;
 import org.pixelexperience.faceunlock.camera.CameraFaceEnrollController;
 import org.pixelexperience.faceunlock.util.NotificationUtils;
 import org.pixelexperience.faceunlock.util.SharedUtil;
 import org.pixelexperience.faceunlock.util.Util;
-import com.motorola.faceunlock.vendor.ArcImpl;
-import com.android.internal.util.custom.faceunlock.IFaceService;
-import com.android.internal.util.custom.faceunlock.IFaceServiceReceiver;
+import org.pixelexperience.faceunlock.vendor.FacePPImpl;
 
 import java.util.Random;
 
@@ -49,7 +50,7 @@ public class FaceAuthService extends Service {
     private long mChallenge = 0;
     private int mChallengeCount = 0;
     private byte[] mEnrollToken;
-    private ArcImpl mFaceAuth;
+    private FacePPImpl mFaceAuth;
     private PendingIntent mIdleTimeoutIntent;
     private Boolean mLockout = false;
     private PendingIntent mLockoutTimeoutIntent;
@@ -254,7 +255,7 @@ public class FaceAuthService extends Service {
         handlerThread.start();
         mWorkHandler = new FaceHandler(handlerThread.getLooper());
         mShareUtil = new SharedUtil(this);
-        mFaceAuth = new ArcImpl(this);
+        mFaceAuth = new FacePPImpl(this);
         mUserId = Util.getUserId(this);
         if (!Util.isFaceUnlockDisabledByDPM(this) && Util.isFaceUnlockEnrolled(this)) {
             mWorkHandler.post(() -> mFaceAuth.init());
