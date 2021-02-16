@@ -11,11 +11,11 @@
     <string name="face_intro_content_third_point">The data used to recognize your face is kept private on your phone</string>
     <string name="face_intro_next">NEXT</string>
     <string name="face_intro_remember">Remember:</string>
-    <string name="face_intro_skip">@android:string/cancel</string>
+    <string name="face_intro_skip" translatable="false">@android:string/cancel</string>
     <string name="face_intro_summary">Unlock your phone by looking at it.</string>
     <string name="face_intro_title">About face unlock</string>
-    <string name="face_value_prop_cancel">no thanks</string>
-    <string name="face_value_prop_next">set up</string>
+    <string name="face_value_prop_cancel">No, Thanks</string>
+    <string name="face_value_prop_next">Set Up</string>
     <string name="face_value_prop_summary">"Face unlock lets you easily get into your phone by just looking at it. Since your phone knows your face, the lock screen shows notifications only when you're looking at it"</string>
     <string name="facelock_setup_notification_text">Set up face unlock</string>
     <string name="facelock_setup_notification_title">Unlock with a glance</string>
