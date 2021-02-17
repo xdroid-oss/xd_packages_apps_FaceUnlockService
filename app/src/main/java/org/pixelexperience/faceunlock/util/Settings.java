@@ -8,14 +8,18 @@ public class Settings {
     private static final String TAG = Settings.class.getSimpleName();
 
     public static boolean isByPassLockScreenEnabled(Context context) {
-        int isEnabled = android.provider.Settings.Secure.getInt(context.getContentResolver(), "face_unlock_dismisses_keyguard", 1);
+        int defaultValue = context.getResources().getBoolean(
+                com.android.internal.R.bool.config_faceAuthDismissesKeyguard) ? 1 : 0;
+        boolean isEnabled = android.provider.Settings.Secure.getInt(
+                context.getContentResolver(),
+                "face_unlock_dismisses_keyguard", defaultValue) == 1;
         Log.d(TAG, "isByPassLockScreenEnabled: " + isEnabled);
-        return isEnabled == 1;
+        return isEnabled;
     }
 
-    public static void setByPassLockScreenEnabled(Context context, int i) {
-        android.provider.Settings.Secure.putInt(context.getContentResolver(), "face_unlock_dismisses_keyguard", i);
-        Log.d(TAG, "setByPassLockScreenEnabled: " + i);
+    public static void setByPassLockScreenEnabled(Context context, boolean enabled) {
+        android.provider.Settings.Secure.putInt(context.getContentResolver(), "face_unlock_dismisses_keyguard", enabled ? 1 : 0);
+        Log.d(TAG, "setByPassLockScreenEnabled: " + enabled);
     }
 
     public static void setFaceUnlockAvailable(Context context, int i) {

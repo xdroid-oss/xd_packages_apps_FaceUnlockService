@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
 
@@ -26,9 +27,14 @@ public class FaceFinish extends Activity {
         });
         Button buttonNext = findViewById(R.id.btn_next);
         buttonNext.setOnClickListener(view -> startFaceUpgrageFinishActivity());
-        @SuppressLint("UseSwitchCompatOrMaterialCode") Switch bypassLockscreenSwitch = findViewById(R.id.bypassLockscreenSwitch);
-        bypassLockscreenSwitch.setChecked(Settings.isByPassLockScreenEnabled(this));
-        bypassLockscreenSwitch.setOnCheckedChangeListener((compoundButton, z) -> Settings.setByPassLockScreenEnabled(FaceFinish.this, z ? 1 : 0));
+        if (Util.isByPassLockScreenAvailable(this)){
+            @SuppressLint("UseSwitchCompatOrMaterialCode") Switch bypassLockscreenSwitch = findViewById(R.id.bypassLockscreenSwitch);
+            bypassLockscreenSwitch.setChecked(Settings.isByPassLockScreenEnabled(this));
+            bypassLockscreenSwitch.setOnCheckedChangeListener((compoundButton, enabled) -> Settings.setByPassLockScreenEnabled(FaceFinish.this, enabled));
+        }else{
+            findViewById(R.id.ll_bypass_lock_screen).setVisibility(View.GONE);
+            findViewById(R.id.face_settings_tip).setVisibility(View.GONE);
+        }
     }
 
     @Override
