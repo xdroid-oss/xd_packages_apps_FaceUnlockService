@@ -16,6 +16,7 @@ include $(BUILD_SYSTEM)/base_rules.mk
 
 $(LOCAL_BUILT_MODULE): $(faceunlock_framework_deps) $(faceunlock_vendor_framework_deps) $(faceunlock_android_framework_deps)
 	$(hide) mkdir -p $(faceunlock_libs_path)
+	$(hide) mkdir -p $(faceunlock_system_libs_path)
 	$(hide) rm -rf $(faceunlock_libs_path)/*.jar
 	$(hide) rm -rf $(faceunlock_system_libs_path)/*.jar
 	$(hide) cp $(faceunlock_framework_deps) $(faceunlock_libs_path)/faceunlock_framework.jar
