@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Desbloqueio facial</string>
-    <string name="attr_light_dark">O rosto precisa estar mais bem iluminado</string>
+    <string name="attr_light_dark">O rosto precisa estar mais iluminado</string>
     <string name="attr_light_high">Há muita luz no rosto</string>
     <string name="attr_light_shadow">Há muita sombra no rosto</string>
     <string name="btn_done">Concluído</string>
