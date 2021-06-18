@@ -16,8 +16,6 @@
     <string name="facelock_setup_notification_text">Indstil ansigtslås</string>
     <string name="facelock_setup_notification_title">Lås op med et enkelt blik</string>
     <string name="policy_disabled_alert_msg">Ansigtslås er blevet deaktiveret af administratoren.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Hvis du trykker på tænd/sluk-knappen, åbnes startskærmen eller senest anvendte app, når et ansigt matches</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Tilsidesæt låseskærm</string>
     <string name="title_activity_face_intro">Introduktion til Ansigtslås</string>
     <string name="unlock_failed_face_blur">Ansigtet er alt for utydeligt</string>
     <string name="unlock_failed_face_large">Ansigtet er for tæt på</string>

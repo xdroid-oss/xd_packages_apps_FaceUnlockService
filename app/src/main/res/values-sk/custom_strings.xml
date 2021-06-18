@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Odomykajte zariadenie pohľadom</string>
     <string name="face_camera_content">Pozerajte sa priamo na telefón</string>
     <string name="face_camera_content_tip">Uistite sa, že je vaša tvár v strede a je dobre osvetlená. Pozerajte sa priamo na telefón.</string>
-    <string name="face_next_change_later_tip">Toto môžete neskôr zmeniť v nastaveniach zisťovania polohy a zabezpečenia</string>
     <string name="face_next_content">Všetko je nastavené</string>
     <string name="face_next_content_tip">"Keďže ste úspešne naskenovali svoju tvár, teraz môžete svoj telefón odomykať jediným pohľadom."</string>
     <string name="face_try_content">Niečo nie je v poriadku</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Funkcia odomknutia tvárou vyžaduje povolenie na prístup k niektorým položkám v zariadení. Ak chcete povolenie udeliť, v ponuke Informácie o aplikácii vyberte možnosť Povolenia.</string>
     <string name="perm_required_alert_title">Vyžadujú sa oprávnenia</string>
     <string name="policy_disabled_alert_msg">Odomknutie tvárou bolo zakázané správcom.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Po stlačení tlačidla Vypnúť sa v prípade rozpoznania tváre otvorí plocha alebo naposledy používaná aplikácia</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Preskočiť obrazovku uzamknutia</string>
     <string name="title_activity_face_intro">Úvod do funkcie odomknutia tvárou</string>
     <string name="unlock_failed_face_blur">Tvár je príliš rozmazaná</string>
     <string name="unlock_failed_face_large">Tvár je príliš blízko</string>

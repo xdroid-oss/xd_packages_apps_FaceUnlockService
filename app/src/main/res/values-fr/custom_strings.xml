@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Déverrouiller d\'un simple coup d\'œil</string>
     <string name="face_camera_content">Alignez votre visage</string>
     <string name="face_camera_content_tip">Centrez votre visage ci-dessous. Assurez-vous que votre visage est bien éclairé et regardez votre téléphone.</string>
-    <string name="face_next_change_later_tip">Vous pourrez modifier cette option ultérieurement dans les paramètres de Sécurité</string>
     <string name="face_next_content">Terminé</string>
     <string name="face_next_content_tip">"Maintenant que vous avez scanné votre visage, vous pouvez déverrouiller votre téléphone d'un simple coup d'œil."</string>
     <string name="face_try_content">Une erreur s\'est produite</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Face unlock doit disposer d\'autorisations pour accéder à certaines fonctions de votre appareil. Pour les activer, sélectionnez \"Autorisations\" dans les Infos de l\'application.</string>
     <string name="perm_required_alert_title">Autorisation requise</string>
     <string name="policy_disabled_alert_msg">Le déverrouillage par reconnaissance faciale a été désactivé par l\'administrateur.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Une fois qu\'une correspondance faciale est vérifiée, l\'écran d\'accueil ou la dernière application utilisée s\'ouvre lorsque vous appuyez sur le bouton Marche-Arrêt</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Contourner l\'écran de verrouillage</string>
     <string name="title_activity_face_intro">Présentation du déverrouillage par reconnaissance faciale</string>
     <string name="unlock_failed_face_blur">Visage trop flou</string>
     <string name="unlock_failed_face_large">Visage trop proche</string>

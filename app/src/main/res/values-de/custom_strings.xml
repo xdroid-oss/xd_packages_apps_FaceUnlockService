@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Mit einem Blick entsperren</string>
     <string name="face_camera_content">Zentrieren Sie ihr Gesicht</string>
     <string name="face_camera_content_tip">Ihr Gesicht muss sich in der Mitte befinden. Achten Sie darauf, dass Ihr Gesicht gut beleuchtet ist und Sie das Gerät direkt anschauen.</string>
-    <string name="face_next_change_later_tip">Sie können diese Einstellungen später in den Sicherheitseinstellungen ändern</string>
     <string name="face_next_content">Fertig.</string>
     <string name="face_next_content_tip">"Da Sie nun Ihr Gesicht gescannt haben, können Sie Ihr Telefon mit nur einem Blick entsperren."</string>
     <string name="face_try_content">Es ist ein Fehler aufgetreten</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Die Gesichtsentsperrung benötigt den Zugriff auf einige Funktionen auf Ihrem Gerät. Wählen Sie \"Berechtigungen\" in der App-Info aus, um die Erlaubnis zu erteilen.</string>
     <string name="perm_required_alert_title">Berechtigungen erforderlich</string>
     <string name="policy_disabled_alert_msg">Die Gesichtsentsperrung wurde von einem Geräteadmin deaktiviert.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Nach Gesichtserkennung direkt entsperren und den Sperrbildschrim überspringen</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Sperrbildschirm überspringen</string>
     <string name="title_activity_face_intro">Einführung zur Gesichtsentsperrung</string>
     <string name="unlock_failed_face_blur">Gesicht zu unscharf</string>
     <string name="unlock_failed_face_large">Gesicht zu nah</string>

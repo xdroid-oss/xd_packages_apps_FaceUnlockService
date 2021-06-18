@@ -16,8 +16,6 @@
     <string name="facelock_setup_notification_text">Nustatykite veido atrakinimą</string>
     <string name="facelock_setup_notification_title">Atrakinkite žvilgsniu</string>
     <string name="policy_disabled_alert_msg">Administratorius išjungė veido atpažinimo užraktą.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Paspaudus įjungimo mygtuką, atidaromas pagrindinis ekranas arba paskutinį kartą naudojama programa, kai veidas suderinamas</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Apeikite užrakto ekraną</string>
     <string name="title_activity_face_intro">Įvadas į veido atpažinimo užraktą</string>
     <string name="unlock_failed_face_blur">Veidas labai neryškus</string>
     <string name="unlock_failed_face_large">Veidas per arti</string>

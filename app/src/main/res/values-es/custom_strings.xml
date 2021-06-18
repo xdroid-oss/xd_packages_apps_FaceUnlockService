@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Desbloquea con la mirada</string>
     <string name="face_camera_content">Centra tu rostro</string>
     <string name="face_camera_content_tip">Asegúrate de que tu cara aparece bien centrada abajo. Mantén tu rostro iluminado y mira directamente hacia el teléfono.</string>
-    <string name="face_next_change_later_tip">Puedes cambiar esta configuración más tarde en los ajustes de Seguridad y ubicación</string>
     <string name="face_next_content">Todo listo</string>
     <string name="face_next_content_tip">"Ahora que has escaneado tu cara, ya puedes desbloquear el teléfono con solo mirarlo."</string>
     <string name="face_try_content">Se ha producido un error</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">El desbloqueo facial necesita permiso para acceder a algunos elementos de tu dispositivo. Selecciona \"Permisos\" en la información de la aplicación para habilitarlos.</string>
     <string name="perm_required_alert_title">Se necesitan permisos</string>
     <string name="policy_disabled_alert_msg">El administrador ha inhabilitado el desbloqueo facial.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Al pulsar el botón de encendido, y si la cara coincide, se abrirá la pantalla de inicio o la última aplicación utilizada.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Omitir bloqueo de pantalla</string>
     <string name="title_activity_face_intro">Introducción al desbloqueo facial</string>
     <string name="unlock_failed_face_blur">La cara está demasiado borrosa</string>
     <string name="unlock_failed_face_large">La cara está demasiado cerca</string>

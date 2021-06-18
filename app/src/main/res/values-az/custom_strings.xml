@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Bir baxışla kilidi aç</string>
     <string name="face_camera_content">Üzünüzü yerləşdirin</string>
     <string name="face_camera_content_tip">Üzünüzü aşağıda mərkəzlədiyinizə əmin olun. Üzünüzü aydınladın və birbaşa telefona baxın.</string>
-    <string name="face_next_change_later_tip">Bunu daha sonra Təhlükəsizlik Tənzimləmələrində dəyişdirə bilərsiniz</string>
     <string name="face_next_content">Hər şey hazırdır</string>
     <string name="face_next_content_tip">"Artıq üzünüzü skan etdiyinizə görə, sadəcə bir baxışda telefonunuzun kilidini aça bilərsiniz."</string>
     <string name="face_try_content">Nəsə səhv getdi</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Üz tanıma kilidinin cihazınızda bəzi şeylərə müraciət etməsi üçün icazəyə ehtiyacı var. Tətbiq məlumatında \"İcazələr\"i seçərək fəallaşdırın.</string>
     <string name="perm_required_alert_title">İcazə tələb olunur</string>
     <string name="policy_disabled_alert_msg">Üz tanıma kilidi administrator tərəfindən sıradan çıxarıldı.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Kilid açıldıqdan sonra, Əsas ekrana və ya son istifadə edilən tətbiqə get</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Kilid ekranını keç</string>
     <string name="title_activity_face_intro">Ün tanıma kilidinin təqdimatı</string>
     <string name="unlock_failed_face_blur">Üzünüz çox bulanıqdır</string>
     <string name="unlock_failed_face_large">Üz çox yaxındadır</string>

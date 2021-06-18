@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">בטל נעילה באמצעות מבט</string>
     <string name="face_camera_content">ישר את פניך</string>
     <string name="face_camera_content_tip">הקפד למקם את פניך במרכז למטה. ודא שהן מוארות היטב והיישר מבט אל הטלפון.</string>
-    <string name="face_next_change_later_tip">ניתן לשנות זאת יותר מאוחר בהגדרות האבטחה.</string>
     <string name="face_next_content">הכל מוכן</string>
     <string name="face_next_content_tip">"כעת, משסיימת לסרוק את פניך, תוכל לבטל את נעילת הטלפון באמצעות הצצה בלבד."</string>
     <string name="face_try_content">משהו השתבש</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">ביטול נעילת פנים זקוק להרשאה כדי לגשת לכמה דברים במכשיר שלך. בחר באפשרות \"הרשאות\" בפרטי האפליקציה כדי להפעיל.</string>
     <string name="perm_required_alert_title">הרשאות נדרשות</string>
     <string name="policy_disabled_alert_msg">אפשרות ביטול הנעילה באמצעות זיהוי פרצוף הושבתה על ידי מנהל המערכת.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">לחיצה על לחצן ההפעלה תפתח את מסך הבית או את האפליקציה האחרונה שהייתה בשימוש, מרגע שתתבצע התאמת פנים</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">עקיפת מסך נעילה</string>
     <string name="title_activity_face_intro">ביטול נעילה באמצעות זיהוי פרצוף – הקדמה</string>
     <string name="unlock_failed_face_blur">הפנים מטושטשות מדי</string>
     <string name="unlock_failed_face_large">הפנים קרובים מדי</string>

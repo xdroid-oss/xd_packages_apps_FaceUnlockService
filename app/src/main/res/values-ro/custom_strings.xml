@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Deblocaţi cu o simplă privire</string>
     <string name="face_camera_content">Încadrați fața</string>
     <string name="face_camera_content_tip">Asigurați-vă că în imaginea de mai jos fața dvs. este centrată. Mențineți-vă fața luminată și priviți direct la telefon.</string>
-    <string name="face_next_change_later_tip">Puteţi modifica ulterior această opţiune din Setările de Securitate</string>
     <string name="face_next_content">Gata!</string>
     <string name="face_next_content_tip">"Acum că v-aţi scanat faţa, vă puteţi debloca telefonul cu o simplă privire."</string>
     <string name="face_try_content">Ceva nu a mers bine</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Deblocarea facială necesită permisiune pentru a accesa anumite lucruri de pe dispozitiv. Pentru a reactiva, selectați „Permisiuni” în Informații despre aplicație pentru a activa</string>
     <string name="perm_required_alert_title">Permisiuni necesare</string>
     <string name="policy_disabled_alert_msg">Deblocarea facială a fost dezactivată de administrator.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">După recunoaşterea facială, apăsarea tastei de alimentare deschide automat ecranul de pornire sau ultima aplicaţie utilizată</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Omiteţi blocarea telefonului</string>
     <string name="title_activity_face_intro">Introducerea funcţiei de deblocare facială</string>
     <string name="unlock_failed_face_blur">Faţa este prea neclară</string>
     <string name="unlock_failed_face_large">Faţa este prea apropiată</string>

@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Odblokowanie spojrzeniem</string>
     <string name="face_camera_content">Ustaw odpowiednio twarz</string>
     <string name="face_camera_content_tip">Upewnij się, że Twoja twarz jest wyśrodkowana poniżej. Twarz powinna być dobrze oświetlona i patrz bezpośrednio na telefon.</string>
-    <string name="face_next_change_later_tip">Można to zmienić później w Ustawieniach zabezpieczeń</string>
     <string name="face_next_content">Wszystko gotowe</string>
     <string name="face_next_content_tip">"Teraz, po zeskanowaniu twarzy, możesz odblokować telefon jednym spojrzeniem."</string>
     <string name="face_try_content">Coś poszło nie tak</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Odblokowanie twarzy wymaga zezwolenia na dostęp do niektórych rzeczy w urządzeniu. Wybierz \"Uprawnienia\" w informacjach o aplikacji, aby je włączyć.</string>
     <string name="perm_required_alert_title">Wymagane uprawnienia</string>
     <string name="policy_disabled_alert_msg">Rozpoznanie twarzy wyłączone przez administratora.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Naciśnięcie przycisku zasilania otwiera ekran główny lub ostatnio używaną aplikację, gdy twarz zostanie rozpoznana</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Obejście funkcji blokady ekranu</string>
     <string name="title_activity_face_intro">Wprowadzenie dotyczące funkcji rozpoznania twarzy</string>
     <string name="unlock_failed_face_blur">Twarz jest zbyt rozmyta</string>
     <string name="unlock_failed_face_large">Twarz jest za blisko</string>

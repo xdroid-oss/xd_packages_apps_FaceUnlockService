@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Розблокування поглядом</string>
     <string name="face_camera_content">Вирівняйте положення обличчя</string>
     <string name="face_camera_content_tip">Обличчя має бути відцентровано нижче. Переконайтеся, що обличчя добре освітлене, і дивіться прямо на телефон.</string>
-    <string name="face_next_change_later_tip">Ви можете змінити це пізніше в налаштуваннях безпеки</string>
     <string name="face_next_content">Все готово!</string>
     <string name="face_next_content_tip">"Тепер, коли ви просканували обличчя, ви можете розблоковувати телефон одним поглядом."</string>
     <string name="face_try_content">Щось пішло не так</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Програмі Фейсконтроль потрібен дозвіл на доступ до певних даних на вашому пристрої. Для ввімкнення виберіть \"Дозволи\" в розділі \"Інформація про програму\".</string>
     <string name="perm_required_alert_title">Необхідні дозволи</string>
     <string name="policy_disabled_alert_msg">Функцію \"Фейсконтроль\" вимкнено адміністратором.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Якщо обличчя буде розпізнано, після натиснення кнопки живлення відкриється головний екран або програма, що використовувалася останньою</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Обхід екрана блокування</string>
     <string name="title_activity_face_intro">Коротко про Фейсконтроль</string>
     <string name="unlock_failed_face_blur">Обличчя надто розмите</string>
     <string name="unlock_failed_face_large">Обличчя надто близько</string>

@@ -16,8 +16,6 @@
     <string name="facelock_setup_notification_text">تنظیم بازگشایی قفل با صورت</string>
     <string name="facelock_setup_notification_title">بازگشایی قفل با یک نگاه</string>
     <string name="policy_disabled_alert_msg">بازگشایی قفل با صورت توسط مدیر سیستم غیرفعال شده است.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">با فشار دادن کلید روشن/خاموش، تلفن روی صفحه اصلی یا آخرین برنامه‌ای که قبلاً با باز شدن قفل با صورت استفاده شده است، باز می‌شود</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">گذشتن از صفحه قفل</string>
     <string name="title_activity_face_intro">معرفی بازگشایی قفل با صورت</string>
     <string name="unlock_failed_face_blur">صورت خیلی تار است</string>
     <string name="unlock_failed_face_large">صورت خیلی نزدیک است</string>

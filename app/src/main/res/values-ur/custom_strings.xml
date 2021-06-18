@@ -16,8 +16,6 @@
     <string name="facelock_setup_notification_text">چہرہ ان لاک سیٹ اپ کریں</string>
     <string name="facelock_setup_notification_title">ایک نظر میں ان لاک کریں</string>
     <string name="policy_disabled_alert_msg">چہرہ ان لاک منتظم کے ذریعے نا اہل بنا دیا گیا ہے۔</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">چہرہ مشابہ ہوجانے پر پاور کلید دبانے سے ابتدائی اسکرین یا آخری استعمال کردہ ایپ کھل جائے گا</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">بائی پاس لاک اسکرین</string>
     <string name="title_activity_face_intro">چہرہ ان لاک کا تعارف</string>
     <string name="unlock_failed_face_blur">چہرہ بہت دھندلا ہے</string>
     <string name="unlock_failed_face_large">چہرہ بہت قریب ہورہا ہے</string>

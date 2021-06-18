@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Feloldás egyetlen pillantással</string>
     <string name="face_camera_content">Igazítsa az arc helyzetét</string>
     <string name="face_camera_content_tip">Ellenőrizze, hogy az arca középen van. Az arca legyen jól megvilágítva és nézzen egyenesen a telefonjára.</string>
-    <string name="face_next_change_later_tip">Ezt később a Biztonság beállításaiban megváltoztathatja</string>
     <string name="face_next_content">A beállítás kész!</string>
     <string name="face_next_content_tip">"Most, hogy sikerült az arc beolvasása, a telefon egyetlen pillantással feloldható."</string>
     <string name="face_try_content">Valami nem stimmel</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Engedélyezni kell, hogy az arcalapú feloldás funkció hozzáférhessen az eszköz egyes adataihoz. Az engedélyezéshez válassza ki az \"Engedélyek\" lehetőséget az Alkalmazásinformáció menüben.</string>
     <string name="perm_required_alert_title">Engedélyek szükségesek</string>
     <string name="policy_disabled_alert_msg">A rendszergazda letiltotta az arcalapú feloldás funkciót.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Ha a telefon felismeri az arcot, a bekapcsológomb megnyomásával megnyílik a kezdőképernyő vagy a legutoljára használt alkalmazás</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">A lezárási képernyő átlépése</string>
     <string name="title_activity_face_intro">Az arcalapú feloldás bemutatása</string>
     <string name="unlock_failed_face_blur">Az arc túlságosan elmosódott</string>
     <string name="unlock_failed_face_large">Az arc túl közel van</string>

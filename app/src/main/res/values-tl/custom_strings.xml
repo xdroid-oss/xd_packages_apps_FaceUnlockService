@@ -15,8 +15,6 @@
     <string name="facelock_setup_notification_text">I-setup ang pag-unlock ng mukha</string>
     <string name="facelock_setup_notification_title">I-unlock sa isang iglap</string>
     <string name="policy_disabled_alert_msg">Dinis-able ng tagapangasiwa ang Face unlock.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Ang pagpindot sa power key ay magbubukas ng home screen o huling ginamit na app sa oras na tumugma ang mukha</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">I-bypass ang naka-lock na screen</string>
     <string name="title_activity_face_intro">Pagpapakilala sa pag-unlock ng mukha</string>
     <string name="unlock_failed_face_blur">Masyadong malabo ang mukha</string>
     <string name="unlock_failed_face_large">Masyadong malapit ang mukha</string>

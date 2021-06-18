@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Avaa lukitus katsomalla puhelinta</string>
     <string name="face_camera_content">Kohdista kasvot</string>
     <string name="face_camera_content_tip">Varmista, että kasvot ovat keskellä. Valaise kasvot hyvin ja katso suoraan puhelimeen.</string>
-    <string name="face_next_change_later_tip">Voit muuttaa tätä myöhemmin Suojausasetuksista</string>
     <string name="face_next_content">Kaikki valmista</string>
     <string name="face_next_content_tip">"Kun kasvot on skannattu, voit avata puhelimen lukituksen katsomalla puhelinta."</string>
     <string name="face_try_content">Jotain meni väärin</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Kasvojentunnistus tarvitsee luvan käyttää joitakin laitteessa olevia kohteita. Myönnä oikeudet valitsemalla sovelluksessa Käyttöoikeudet.</string>
     <string name="perm_required_alert_title">Käyttöoikeus vaaditaan</string>
     <string name="policy_disabled_alert_msg">Järjestelmänvalvoja on poistanut kasvojentunnistuksen käytöstä.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Virtanäppäimen painaminen avaa aloitusruudun tai viimeksi käytetyn sovelluksen, kun järjestelmä on tunnistanut kasvot</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Ohita näytön lukitus</string>
     <string name="title_activity_face_intro">Kasvojentunnistus – esittely</string>
     <string name="unlock_failed_face_blur">Kasvot ovat liian sumeat</string>
     <string name="unlock_failed_face_large">Kasvot ovat liian lähellä</string>

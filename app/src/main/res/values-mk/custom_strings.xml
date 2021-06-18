@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Отклучување со поглед</string>
     <string name="face_camera_content">Порамнете го вашето лице</string>
     <string name="face_camera_content_tip">Осигурете се лицето да ви биде центрирано подолу. Лицето треба ви биде добро осветлено и да гледате директно во телефонот.</string>
-    <string name="face_next_change_later_tip">Ова можете да го промените подоцна во поставките за безбедност и локација</string>
     <string name="face_next_content">Готово</string>
     <string name="face_next_content_tip">"Сега кога го скениравте вашето лице, можете да го отклучувате телефонот само со поглед."</string>
     <string name="face_try_content">Нешто тргна наопаку</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">На отклучувањето со лик му е потребна дозвола за да пристапи до одредени функции на вашиот уред. Изберете \"Дозволи\" во информациите за апликацијата за да го овозможите.</string>
     <string name="perm_required_alert_title">Потребни дозволи</string>
     <string name="policy_disabled_alert_msg">Администраторот ја оневозможил функцијата Отклучување со лик.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Притиснувањето на копчето за вклучување го отвора почетниот екран или последната користена апликација откако ќе се изврши препознавање на ликот</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Заобиколи го заклучениот екран</string>
     <string name="title_activity_face_intro">Вовед во отклучување со препознавање лик</string>
     <string name="unlock_failed_face_blur">Лицето е премногу заматено</string>
     <string name="unlock_failed_face_large">Лицето е премногу доближено</string>

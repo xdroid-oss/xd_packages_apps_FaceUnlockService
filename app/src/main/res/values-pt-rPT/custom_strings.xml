@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Desbloquear com um olhar</string>
     <string name="face_camera_content">Alinhe a sua face</string>
     <string name="face_camera_content_tip">Certifique-se de que a face está centrada abaixo. Mantenha o rosto bem iluminado e olhe diretamente para o telemóvel.</string>
-    <string name="face_next_change_later_tip">Pode alterar isto mais tarde nas definições de segurança</string>
     <string name="face_next_content">Concluído</string>
     <string name="face_next_content_tip">"Agora que a face foi analisada, pode desbloquear o telemóvel com apenas um olhar."</string>
     <string name="face_try_content">Ocorreu um erro</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">O desbloqueio facial necessita de permissão para aceder a algumas áreas do dispositivo. Selecione \"Permissões\" em Informações da aplicação para permitir.</string>
     <string name="perm_required_alert_title">Permissões necessárias</string>
     <string name="policy_disabled_alert_msg">O desbloqueio facial foi desativado pelo administrador.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Após desbloquear, ir para o ecrã inicial ou para a última aplicação usada</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Ignorar ecrã de bloqueio</string>
     <string name="title_activity_face_intro">Introdução ao desbloqueio facial</string>
     <string name="unlock_failed_face_blur">A face está desfocada</string>
     <string name="unlock_failed_face_large">A face está demasiado perto</string>

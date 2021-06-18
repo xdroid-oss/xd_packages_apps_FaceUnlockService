@@ -16,8 +16,6 @@
     <string name="facelock_setup_notification_text">Nastavitev odklepanja z obrazom</string>
     <string name="facelock_setup_notification_title">Odklepanje s pogledom</string>
     <string name="policy_disabled_alert_msg">Odklepanje z obrazom je onemogočil skrbnik.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">S pritiskom tipke za vklop/izklop odprete začetni zaslon ali nazadnje uporabljeno aplikacijo, ko je prepoznan obraz</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Obhod zaklenjenega zaslona</string>
     <string name="title_activity_face_intro">Uvod v odklepanje z obrazom</string>
     <string name="unlock_failed_face_blur">Obraz je preveč zamegljen</string>
     <string name="unlock_failed_face_large">Obraz je preblizu</string>

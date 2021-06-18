@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Ontgrendelen met één blik</string>
     <string name="face_camera_content">Breng je gezicht in beeld</string>
     <string name="face_camera_content_tip">Zorg dat je gezicht hieronder in het midden zichtbaar is. Zorg dat je gezicht goed belicht is en kijk recht naar de telefoon.</string>
-    <string name="face_next_change_later_tip">Je kunt dit later wijzigen in de instellingen voor Locatie en beveiliging</string>
     <string name="face_next_content">Alles ingesteld</string>
     <string name="face_next_content_tip">"Nu je gezicht is gescand, kun je je telefoon ontgrendelen door ernaar te kijken."</string>
     <string name="face_try_content">Er is een fout opgetreden</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Ontgrendelen via gezichtsherkenning heeft toestemming nodig voor toegang tot bepaalde delen op je apparaat. Selecteer \"Toestaan\" in App-info om dit opnieuw in te schakelen.</string>
     <string name="perm_required_alert_title">Toestemming vereist</string>
     <string name="policy_disabled_alert_msg">Ontgrendelen via gezichtsherkenning is uitgeschakeld door de beheerder.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Als je op de aan/uit-knop drukt, wordt het startscherm of de app die je het laatst hebt gebruikt, geopend als het gezicht overeenkomt met de scan</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Vergrendeld scherm omzeilen</string>
     <string name="title_activity_face_intro">Ontgrendelen via gezichtsherkenning - Inleiding</string>
     <string name="unlock_failed_face_blur">Gezicht te wazig</string>
     <string name="unlock_failed_face_large">Gezicht is te dichtbij</string>

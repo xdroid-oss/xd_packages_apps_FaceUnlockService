@@ -16,8 +16,6 @@
     <string name="facelock_setup_notification_text">Подесите откључавање лицем</string>
     <string name="facelock_setup_notification_title">Откључавање погледом</string>
     <string name="policy_disabled_alert_msg">Администратор је онемогућио откључавање лицем.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Притиском на тастер за укључивање отвара се почетни екран или последња коришћена апликација када се препозна лице</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Заобиђите закључавање екрана</string>
     <string name="title_activity_face_intro">Увод у откључавање лицем</string>
     <string name="unlock_failed_face_blur">Лице је превише замагљено</string>
     <string name="unlock_failed_face_large">Лице је преблизу</string>

@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Liếc nhanh để mở khóa</string>
     <string name="face_camera_content">Căn chỉnh khuôn mặt của bạn</string>
     <string name="face_camera_content_tip">Đảm bảo rằng khuôn mặt của bạn nằm ở chính giữa. Giữ khuôn mặt của bạn đủ ánh sáng và nhìn thẳng vào điện thoại.</string>
-    <string name="face_next_change_later_tip">Bạn có thể thay đổi điều này sau trong Cài đặt bảo mật</string>
     <string name="face_next_content">Mọi thứ đã sẵn sàng</string>
     <string name="face_next_content_tip">"Bây giờ bạn đã quét khuôn mặt của mình, bạn có thể mở khóa điện thoại của mình chỉ trong nháy mắt."</string>
     <string name="face_try_content">Đã xảy ra sự cố</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Mở khóa bằng khuôn mặt cần quyền truy cập vào một số nội dung trên thiết bị của bạn. Hãy chọn \"Quyền\" trong thông tin Ứng dụng để bật.</string>
     <string name="perm_required_alert_title">Yêu cầu cấp quyền</string>
     <string name="policy_disabled_alert_msg">Quản trị viên đã tắt Mở khóa bằng khuôn mặt.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Nhấn phím nguồn sẽ tự động mở màn hình chính hoặc ứng dụng sử dụng lần cuối khi khuôn mặt trùng khớp</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Bỏ qua màn hình khóa</string>
     <string name="title_activity_face_intro">Giới thiệu về mở khóa bằng khuôn mặt</string>
     <string name="unlock_failed_face_blur">Khuôn mặt quá mờ</string>
     <string name="unlock_failed_face_large">Khuôn mặt quá gần</string>

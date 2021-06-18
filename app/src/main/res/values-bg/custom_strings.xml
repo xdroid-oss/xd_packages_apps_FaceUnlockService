@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Отключване с поглед</string>
     <string name="face_camera_content">Подравнете лицето си</string>
     <string name="face_camera_content_tip">Уверете се, че лицето ви е центрирано отдолу. Лицето ви трябва да е добре осветено и да е обърнато директно към телефона ви.</string>
-    <string name="face_next_change_later_tip">Можете да промените това по-късно от настройките за \"Сигурност и местоположение\"</string>
     <string name="face_next_content">Всичко е готово</string>
     <string name="face_next_content_tip">"След като сканирахте лицето си, можете да отключвате телефона си само с поглед"</string>
     <string name="face_try_content">Възникна грешка</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Отключването с лице има нужда от разрешение за достъп до някои елементи от Вашето устройство. Изберете \"Разрешения\" в информация за приложението за разрешаване.</string>
     <string name="perm_required_alert_title">Необходими са разрешения</string>
     <string name="policy_disabled_alert_msg">Лицевото отключване е изключено от администратора.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Натискането на бутон вкл./изкл. ще отвори началния екран или последно използваното приложение, когато лицето е разпознато</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Пропускане на заключения екран</string>
     <string name="title_activity_face_intro">Въведение в отключването с лице</string>
     <string name="unlock_failed_face_blur">Лицето е твърде неясно</string>
     <string name="unlock_failed_face_large">Лицето е твърде близо</string>

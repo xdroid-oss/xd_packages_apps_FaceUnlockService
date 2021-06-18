@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">এক ঝলকে আনলক করুন</string>
     <string name="face_camera_content">আপনার মুখ সঠিক স্থানে রাখুন</string>
     <string name="face_camera_content_tip">নিচে আপনার মুখটি মাঝামাঝি রয়েছে কিনা নিশ্চিত করুন। মুখটি ভালভাবে আলোকিত করুন এবং সরাসরি আপনার ফোনের দিকে তাকান।</string>
-    <string name="face_next_change_later_tip">আপনি এটি পরে নিরাপত্তা সেটিংসে পরিবর্তন করতে পারবেন</string>
     <string name="face_next_content">সব প্রস্তুত</string>
     <string name="face_next_content_tip">"এখন যখন আপনি নিজের মুখটি স্ক্যান করে ফেলেছেন, শুধু একবার তাকিয়েই আপনি ফোনটি আনলক করতে পারেন।"</string>
     <string name="face_try_content">কিছু ভুল হয়েছে</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">আপনার ডিভাইসে কিছু জিনিসকে অ্যাক্সেস করতে ফেস আনলকের অনুমতি নেওয়া প্রয়োজন। পুনরায় সক্ষম করতে অ্যাপের তথ্যে “অনুমতিগুলো” নির্বাচন করুন।</string>
     <string name="perm_required_alert_title">অনুমতিগুলো প্রয়োজনীয়</string>
     <string name="policy_disabled_alert_msg">মুখ আনলক প্রশাসক দ্বারা অক্ষম করা হয়েছে।</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">পাওয়ার কীটি টেপা হলে একবার কোনও মুখ মিলে গেলে তা হোম স্ক্রীন বা শেষ ব্যবহৃত অ্যাপটি খুলবে</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">লক স্ক্রিন বাইপাস করুন</string>
     <string name="title_activity_face_intro">মুখ আনলক উপস্থাপনা</string>
     <string name="unlock_failed_face_blur">মুখটি অত্যন্ত ঝাপসা</string>
     <string name="unlock_failed_face_large">মুখ খুব কাছে রয়েছে</string>

@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">إلغاء القفل بلمحة</string>
     <string name="face_camera_content">محاذاة وضعية وجهك</string>
     <string name="face_camera_content_tip">احرص على أن يكون وجهك في المنتصف مع توفير إضاءة كافية على وجهك والنظر مباشرةً إلى هاتفك.</string>
-    <string name="face_next_change_later_tip">يمكنك تغيير هذا الأمر لاحقًا في إعدادات الأمان</string>
     <string name="face_next_content">كل شيء جاهز</string>
     <string name="face_next_content_tip">"الآن بعد أن قمت بمسح وجهك ضوئيًا، أصبح بإمكانك إلغاء قفل الهاتف عن طريق النظر."</string>
     <string name="face_try_content">حدث خطأ ما</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">تحتاج ميزة إلغاء قفل الجهاز بالوجه إلى صلاحيات للوصول إلى بعض العناصر على جهازك. حدد \"الصلاحيات\" في معلومات التطبيق لتمكينها.</string>
     <string name="perm_required_alert_title">مطلوب توفير صلاحية</string>
     <string name="policy_disabled_alert_msg">تم تعطيل ميزة إلغاء قفل الجهاز بالوجه من قبل المسؤول.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">الذهاب إلى الشاشة الرئيسية أو آخر تطبيق مستخدم بعد الغاء قفل الشاشة</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">تجاوز شاشة القفل</string>
     <string name="title_activity_face_intro">مقدمة عن إلغاء قفل الجهاز بالوجه</string>
     <string name="unlock_failed_face_blur">الوجه مموّه جدًا</string>
     <string name="unlock_failed_face_large">الوجه قريب جدًا</string>

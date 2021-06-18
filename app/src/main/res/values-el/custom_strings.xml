@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Ξεκλείδωμα με μια ματιά</string>
     <string name="face_camera_content">Ευθυγραμμίστε το πρόσωπό σας</string>
     <string name="face_camera_content_tip">Βεβαιωθείτε πως το πρόσωπό σας είναι κεντραρισμένο παρακάτω. Φροντίστε το πρόσωπό σας να είναι καλά φωτισμένο και κοιτάξτε απευθείας το τηλέφωνό σας.</string>
-    <string name="face_next_change_later_tip">Μπορείτε να το αλλάξετε αυτό αργότερα στις Ρυθμίσεις Ασφάλεια</string>
     <string name="face_next_content">Όλα έτοιμα</string>
     <string name="face_next_content_tip">"Τώρα που σαρώσατε το πρόσωπό σας, μπορείτε να ξεκλειδώσετε το τηλέφωνό σας μόνο με μια ματιά."</string>
     <string name="face_try_content">Κάτι πήγε στραβά</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Το Face unlock χρειάζεται άδεια για πρόσβαση σε ορισμένα πράγματα στη συσκευή σας. Επιλέξτε \"Άδειες\" στις Πληροφορίες εφαρμογής για ενεργοποίηση.</string>
     <string name="perm_required_alert_title">Απαιτούνται άδειες</string>
     <string name="policy_disabled_alert_msg">Το Face unlock έχει απενεργοποιηθεί από τον διαχειριστή.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Με το πάτημα του πλήκτρου λειτουργίας, ανοίγει η αρχική οθόνη ή η εφαρμογή που χρησιμοποιήθηκε τελευταία, μόλις γίνει αντιστοίχιση ενός προσώπου</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Παράκαμψη κλειδώματος οθόνης</string>
     <string name="title_activity_face_intro">Εισαγωγή Face unlock</string>
     <string name="unlock_failed_face_blur">Το πρόσωπο είναι πολύ θολό</string>
     <string name="unlock_failed_face_large">Το πρόσωπο είναι πολύ κοντά</string>

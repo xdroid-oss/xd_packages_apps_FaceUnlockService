@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Sblocca con uno sguardo</string>
     <string name="face_camera_content">Allinea il viso</string>
     <string name="face_camera_content_tip">Controlla che il tuo viso compaia qui sotto al centro e sia ben illuminato. Guarda direttamente verso il telefono.</string>
-    <string name="face_next_change_later_tip">Puoi modificare questa opzione successivamente in Impostazioni Sicurezza</string>
     <string name="face_next_content">Configurazione completata</string>
     <string name="face_next_content_tip">"Ora che è stata eseguita la scansione del viso, puoi sbloccare il telefono con lo sguardo."</string>
     <string name="face_try_content">Si è verificato un errore</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Lo sblocco con il viso necessita dell\'autorizzazione per accedere ad alcuni elementi del dispositivo. Seleziona \"Autorizzazioni\" in Informazioni app per attivare.</string>
     <string name="perm_required_alert_title">Autorizzazioni richieste</string>
     <string name="policy_disabled_alert_msg">La funzione di sblocco con il viso è stata disattivata dall\'amministratore.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Dopo Sblocco con il volto, vai all\'ultima schermata usata</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Ignorare schermata di blocco</string>
     <string name="title_activity_face_intro">Introduzione allo sblocco con il viso</string>
     <string name="unlock_failed_face_blur">Il viso è troppo sfocato</string>
     <string name="unlock_failed_face_large">Il viso è troppo vicino</string>

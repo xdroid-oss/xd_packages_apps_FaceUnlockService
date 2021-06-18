@@ -16,8 +16,6 @@
     <string name="facelock_setup_notification_text">မျက်နှာဖြင့် သော့ဖွင့်ခြင်းကို သတ်မှတ်ပါ</string>
     <string name="facelock_setup_notification_title">တစ်ချက်ကြည့်ရုံဖြင့် သော့ဖွင့်ပါ</string>
     <string name="policy_disabled_alert_msg">မျက်နှာဖြင့် သော့ဖွင့်မှုကို စီမံခန့်ခွဲသူမှ ပိတ်ထားပါသည်။</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">မျက်နှာကိုက်ညီသွားသည့်အခါ ပါဝါကီးကိုနှိပ်ခြင်းသည် ပင်မစခရင် (သို့) နောက်ဆုံးသုံးခဲ့သည့် အက်ပ်ကိုပွင့်သွားစေမည်။</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">သော့ခတ်စခရင်ကို ဖြတ်ကျော်မည်</string>
     <string name="title_activity_face_intro">မျက်နှာဖြင့် သော့ဖွင့်ခြင်း မိတ်ဆက်</string>
     <string name="unlock_failed_face_blur">မျက်နှာအလွန်ဝါးနေသည်</string>
     <string name="unlock_failed_face_large">မျက်နှာကပ်လွန်းနေသည်</string>

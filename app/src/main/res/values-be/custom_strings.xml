@@ -20,7 +20,6 @@
     <string name="facelock_setup_notification_title">Разблакіруйце адным позіркам</string>
     <string name="face_camera_content">Выраўняйце твар</string>
     <string name="face_camera_content_tip">Пераканайцеся, што ваш твар знаходзіцца ў цэнтры. Трымайце твар добра асветленым і глядзіце прама на тэлефон.</string>
-    <string name="face_next_change_later_tip">Вы можаце змяніць гэта пазней у раздзеле Бяспека</string>
     <string name="face_next_content">Усё гатова</string>
     <string name="face_next_content_tip">"Цяпер, калі вы адсканіравалі свой твар, вы можаце разблакіраваць тэлефон адным поглядам."</string>
     <string name="face_try_content">Нешта пайшло не так</string>
@@ -29,8 +28,6 @@
     <string name="perm_required_alert_msg">Праграме разблакіроўкі па твару патрабуецца дазвол на доступ да некаторых даных на вашай прыладзе. Выберыце пункт \"Дазволы\" у раздзеле інфармацыі пра праграму, каб уключыць функцыю.</string>
     <string name="perm_required_alert_title">Патрабуюцца дазволы</string>
     <string name="policy_disabled_alert_msg">Разблакіроўка тварам была адключана адміністратарам.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">Пасля разблакіроўкі, націсканне клавішы сілкавання адкрые галоўны экран альбо апошнюю праграму, якая выкарыстоўвалася. </string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Абыход экрана блакіроўкі</string>
     <string name="title_activity_face_intro">Кароткая інфармацыя пра разблакоўку тварам</string>
     <string name="unlock_failed_face_blur">Твар занадта размыты</string>
     <string name="unlock_failed_face_large">Твар занадта блізка</string>

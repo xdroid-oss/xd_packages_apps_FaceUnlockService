@@ -16,8 +16,6 @@
     <string name="facelock_setup_notification_text">चेहरा अनलॉक सेटअप करा</string>
     <string name="facelock_setup_notification_title">एका कटाक्षा सह अनलॉक करा</string>
     <string name="policy_disabled_alert_msg">कॅमेरा अनलॉक प्रशासकाद्वारे अक्षम केला गेला आहे.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">एकदा चेहरा जुळल्यावर पॉवर की दाबल्याने होम स्क्रीन किंवा शेवटचे वापरलेले ॲप उघडेल</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">लॉक स्क्रीन वगळा</string>
     <string name="title_activity_face_intro">चेहरा अनलॉक परिचय</string>
     <string name="unlock_failed_face_blur">चेहरा खूप अस्पष्ट आहे</string>
     <string name="unlock_failed_face_large">चेहरा खूपच जवळ आहे</string>

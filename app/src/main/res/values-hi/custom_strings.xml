@@ -16,8 +16,6 @@
     <string name="facelock_setup_notification_text">चेहरे से अनलॉक सेट करें</string>
     <string name="facelock_setup_notification_title">पलक झपकते ही अनलॉक करें</string>
     <string name="policy_disabled_alert_msg">चेहरे से अनलॉक को आपके व्यवस्थापक द्वारा अक्षम कर दिया गया है.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">चेहरा मेल खाने के बाद पावर की दबाने पर होम स्क्रीन खुलती है या अंतिम उपयोग किया गया ऐप खुलता है</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">लॉक स्क्रीन की उपेक्षा करना</string>
     <string name="title_activity_face_intro">चेहरे से अनलॉक का परिचय</string>
     <string name="unlock_failed_face_blur">चेहरा बहुत धुंधला है</string>
     <string name="unlock_failed_face_large">चेहरा बहुत पास है</string>

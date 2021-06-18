@@ -16,8 +16,6 @@
     <string name="facelock_setup_notification_text">ตั้งค่าการปลดล็อกด้วยใบหน้า</string>
     <string name="facelock_setup_notification_title">ปลดล็อกด้วยการมอง</string>
     <string name="policy_disabled_alert_msg">การปลดล็อกด้วยใบหน้าถูกปิดใช้งานโดยผู้ดูแลระบบ</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">การกดแป้นเปิด/ปิดจะเปิดหน้าจอหลักหรือแอปที่ใช้ล่าสุดเมื่อจับคู่ใบหน้าแล้ว</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">ข้ามหน้าจอล็อก</string>
     <string name="title_activity_face_intro">การแนะนำการปลดล็อกด้วยใบหน้า</string>
     <string name="unlock_failed_face_blur">ใบหน้าเบลอเกินไป</string>
     <string name="unlock_failed_face_large">ใบหน้าอยู่ใกล้เกินไป</string>
