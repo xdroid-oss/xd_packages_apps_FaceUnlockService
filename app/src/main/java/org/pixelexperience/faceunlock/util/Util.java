@@ -57,9 +57,4 @@ public class Util {
                 .setData(Uri.fromParts("package", activity.getPackageName(), null));
         activity.startActivityForResult(intent, requestCode);
     }
-
-    public static boolean isByPassLockScreenAvailable(Context context) {
-        return !context.getResources().getBoolean(
-                com.android.internal.R.bool.config_faceAuthOnlyOnSecurityView);
-    }
 }

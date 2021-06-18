@@ -21,7 +21,6 @@
     <string name="facelock_setup_notification_title">Unlock with a glance</string>
     <string name="face_camera_content">Align your face</string>
     <string name="face_camera_content_tip">Make sure your face is centered below. Keep your face well lit and look directly at your phone.</string>
-    <string name="face_next_change_later_tip">You can change this later in Security Settings</string>
     <string name="face_next_content">All set</string>
     <string name="face_next_content_tip">"Now that you've scanned your face, you can unlock your phone with just a glance."</string>
     <string name="face_try_content">Something went wrong</string>
@@ -30,8 +29,6 @@
     <string name="perm_required_alert_msg">Face unlock needs permission to access some things on your device. Select \"Permissions\" in App info to enable.</string>
     <string name="perm_required_alert_title">Permissions required</string>
     <string name="policy_disabled_alert_msg">Face unlock has been disabled by the administrator.</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_summary">After unlocking, go to the Home screen or last used app</string>
-    <string name="security_settings_face_unlock_bypass_lock_screen_title">Skip lock screen</string>
     <string name="title_activity_face_intro">Face unlock introduction</string>
     <string name="unlock_failed_face_blur">Face is too blurry</string>
     <string name="unlock_failed_face_large">Face is too close</string>
