@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">სახით განბლოკვა</string>
+    <string name="attr_light_dark">სახეს სჭირდება მეტი შუქი</string>
+    <string name="attr_light_high">სახეს აქვს ზედმეტად ბევრი შუქი</string>
+    <string name="attr_light_shadow">სახეს აქვს ზედმეტად ბევრი ჩრდილები</string>
+    <string name="btn_done">დასრულდა</string>
+    <string name="btn_try">სცადეთ თავიდან</string>
+    <string name="face_intro_conten_first_point">სახით განბლოკვა არის ნაკლებად დაცული ვიდრე ნიმუში, პინი, ან პაროლი</string>
+    <string name="face_intro_content_second_point">ვინმემ ვინც გგავთ თქვენ შესაძლოა მოხსნას თქვენი ტელეფონის ბლოკი</string>
+    <string name="face_intro_content_third_point">ინფორმაცია რომელიც გამოყენებული იქნა თქვენი სახის ამოსაცნობად რჩება დაცული თქვენს ტელეფონში</string>
+    <string name="face_intro_next">შემდეგი</string>
+    <string name="face_intro_remember">გახსოვდეთ:</string>
+    <string name="face_intro_summary">მოხსენით ტელეფონზე ბლოკი ყურებით</string>
+    <string name="face_intro_title">სახით განბლოკვის შესახებ</string>
+    <string name="face_value_prop_cancel">არა, გმადლობთ</string>
+    <string name="face_value_prop_next">დაყენება</string>
+    <string name="face_value_prop_summary">"სახით განბლოკვა გაძლევთ საშუალებას მოხსნათ ადვილად ბლოკვი მხოლოდ მასზე შეხედვით. ვინაიდან თქვენი ტელეფონი სცნობს თქვენს სახეს, ბლოკირების ეკრანი აჩვენებს შეტყობინებებს მხოლოდ მაშინ როდესაც თქვენ უყურებთ მას"</string>
+    <string name="facelock_setup_notification_text">სახით განბლოკვის დაყენება</string>
+    <string name="facelock_setup_notification_title">ერთი შეხედვით განვლოკვა</string>
+    <string name="face_camera_content">მიმართეთ თქვენი სახე</string>
+    <string name="face_next_content">ყველაფერი მზადაა</string>
+    <string name="face_try_content">დაფიქსირდა შეცდომა</string>
+    <string name="perm_required_alert_button_app_info">აპის შესახებ</string>
+    <string name="perm_required_alert_msg">სახით განბლოკვას სჭირდება უფლებები რომ ჰქონდეს წვდომა რაღაცეებზე თქვენს ტელეფონში. აირჩიეთ \"უფლებები\" აპლიკაციის ინფორმაციაში და გაააქტიურეთ.</string>
+    <string name="perm_required_alert_title">საჭიროა ნებართვები</string>
+    <string name="policy_disabled_alert_msg">სახით განბლოკვა გაუქმებულია ადმინისტრატორის მიერ.</string>
+    <string name="title_activity_face_intro">სახით განბლოკვის წარდგენა</string>
+    <string name="unlock_failed_face_blur">სახე ძალიან დაბინდულია</string>
+    <string name="unlock_failed_face_large">სახე ძალიან ახლოა</string>
+    <string name="unlock_failed_face_multi">ზედმეტად ბევრი სახე დაფიქსირდა</string>
+    <string name="unlock_failed_face_not_complete">მხოლოდ ნაწილობრივ დაფიქსირდა სახე</string>
+    <string name="unlock_failed_face_small">სახე ძალიან შორსაა</string>
+    <string name="upgrade_finish_summary">"ახლა თქვენ უკვე მზად ხართ რომ მოხსნათ თქვენი ტელეფონის ბლოკი სახით განბლოკვით"</string>
+    <string name="upgrade_finish_title">ყველაფერი კარგადაა!</string>
+</resources>

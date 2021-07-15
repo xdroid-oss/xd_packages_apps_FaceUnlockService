@@ -29,9 +29,9 @@
     <string name="perm_required_alert_title">Se necesitan permisos</string>
     <string name="policy_disabled_alert_msg">El administrador ha inhabilitado el desbloqueo facial.</string>
     <string name="title_activity_face_intro">Introducción al desbloqueo facial</string>
-    <string name="unlock_failed_face_blur">La cara está demasiado borrosa</string>
-    <string name="unlock_failed_face_large">La cara está demasiado cerca</string>
-    <string name="unlock_failed_face_multi">Se han detectado demasiadas caras</string>
+    <string name="unlock_failed_face_blur">El rostro se ve demasiado borroso</string>
+    <string name="unlock_failed_face_large">El rostro está muy cerca</string>
+    <string name="unlock_failed_face_multi">Se han detectado varios rostros</string>
     <string name="unlock_failed_face_not_complete">Se ha detectado una cara parcialmente</string>
     <string name="unlock_failed_face_small">La cara está demasiado lejos</string>
     <string name="upgrade_finish_summary">"Ahora ya puedes desbloquear el dispositivo con el Desbloqueo facial"</string>
