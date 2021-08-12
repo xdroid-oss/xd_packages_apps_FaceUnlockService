@@ -13,8 +13,17 @@
     <string name="face_intro_remember">Recorda:</string>
     <string name="face_intro_summary">Desbloquegeu el telèfon amb la mirada.</string>
     <string name="face_intro_title">Quant al desbloqueig facial</string>
+    <string name="face_value_prop_cancel">No, gràcies</string>
+    <string name="face_value_prop_next">Configura</string>
+    <string name="face_value_prop_summary">"El desbloqueig facial et permet desbloquejar el teu mòbil amb la teva mirada. Degut a que el teu mòbil reconeix la teva cara, la pantalla de bloqueig només mostra les notificacions quan hi mires"</string>
     <string name="facelock_setup_notification_text">Configura el desbloqueig facial</string>
     <string name="facelock_setup_notification_title">Desbloqueja amb una mirada</string>
+    <string name="face_camera_content">Centra la cara</string>
+    <string name="face_next_content">Perfecte! Tot fet</string>
+    <string name="face_next_content_tip">"Ara que has fet l'escaneig de cara, pots desbloquejar el mòbil amb una simple mirada."</string>
+    <string name="face_try_content_tip">"L'escaneig facial ha fallat. Comprova si hi ha bona il·luminació i de mirar a la càmera."</string>
+    <string name="perm_required_alert_button_app_info">Informació de l\'aplicació</string>
+    <string name="perm_required_alert_title">Es requereixen permisos</string>
     <string name="policy_disabled_alert_msg">L\'administrador ha inhabilitat el desbloqueig facial.</string>
     <string name="title_activity_face_intro">Introducció al desbloqueig facial</string>
     <string name="unlock_failed_face_blur">La cara està massa borrosa</string>

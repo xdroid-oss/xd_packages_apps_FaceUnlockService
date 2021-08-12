@@ -19,8 +19,11 @@
     <string name="facelock_setup_notification_text">სახით განბლოკვის დაყენება</string>
     <string name="facelock_setup_notification_title">ერთი შეხედვით განვლოკვა</string>
     <string name="face_camera_content">მიმართეთ თქვენი სახე</string>
+    <string name="face_camera_content_tip">დარწმუნდით, რომ თქვენი სახე ორიენტირებულია ქვემოთ. კარგად განათეთ თქვენი სახე და პირდაპირ ტელეფონს დახედეთ.</string>
     <string name="face_next_content">ყველაფერი მზადაა</string>
+    <string name="face_next_content_tip">"ახლა, როდესაც სახე დაასკანირეთ, ტელეფონის განბლოკვა მხოლოდ ერთი შეხედვით შეგიძლიათ."</string>
     <string name="face_try_content">დაფიქსირდა შეცდომა</string>
+    <string name="face_try_content_tip">"სახის სკანირება ვერ მოხერხდა. დარწმუნდით, რომ კარგად ხართ განათებული და უყურებთ კამერას."</string>
     <string name="perm_required_alert_button_app_info">აპის შესახებ</string>
     <string name="perm_required_alert_msg">სახით განბლოკვას სჭირდება უფლებები რომ ჰქონდეს წვდომა რაღაცეებზე თქვენს ტელეფონში. აირჩიეთ \"უფლებები\" აპლიკაციის ინფორმაციაში და გაააქტიურეთ.</string>
     <string name="perm_required_alert_title">საჭიროა ნებართვები</string>
