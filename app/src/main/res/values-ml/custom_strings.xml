@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="attr_light_dark">മുഖത്ത് കൂടുതൽ വെളിച്ചം  ആവശ്യമുണ്ട് </string>
     <string name="btn_done">ചെയ്തു</string>
+    <string name="btn_try">വീണ്ടും ശ്രമിക്കുക </string>
     <string name="face_intro_next">അടുത്തത്</string>
     <string name="face_intro_remember">ഓർക്കുക:</string>
+    <string name="perm_required_alert_title">അനുമതികൾ ആവശ്യമായിരിക്കുന്നു </string>
+    <string name="unlock_failed_face_large">മൂഖം വളരെ അടുത്താണ് </string>
+    <string name="unlock_failed_face_multi">ഒരുപാട് മുഖങ്ങൾ ശ്രദ്ധയിൽപ്പെട്ടു </string>
+    <string name="unlock_failed_face_small">മുഖം ഒരുപാട് പിന്നിലാണ് </string>
+    <string name="upgrade_finish_title">എല്ലാം തൃപ്തികരം </string>
 </resources>

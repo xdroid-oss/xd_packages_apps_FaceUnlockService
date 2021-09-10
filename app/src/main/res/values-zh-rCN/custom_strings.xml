@@ -6,7 +6,7 @@
     <string name="attr_light_shadow">面部阴影过多</string>
     <string name="btn_done">完成</string>
     <string name="btn_try">请重试</string>
-    <string name="face_intro_conten_first_point">人脸识别安全性低于图案、PIN码或密码解锁</string>
+    <string name="face_intro_conten_first_point">人脸识别安全性低于图案、PIN 码或密码解锁</string>
     <string name="face_intro_content_second_point">与您长相相似的人也可以解锁您的手机</string>
     <string name="face_intro_content_third_point">手机中用来识别您面部的数据是保密的</string>
     <string name="face_intro_next">下一步</string>
