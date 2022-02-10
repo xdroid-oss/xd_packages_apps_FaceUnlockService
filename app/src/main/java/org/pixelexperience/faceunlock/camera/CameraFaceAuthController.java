@@ -1,5 +1,7 @@
 package org.pixelexperience.faceunlock.camera;
 
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_FACE_NOT_FOUND;
+
 import android.content.Context;
 import android.graphics.ImageFormat;
 import android.graphics.SurfaceTexture;
@@ -19,8 +21,6 @@ import org.pixelexperience.faceunlock.camera.listeners.ReadParametersListener;
 import org.pixelexperience.faceunlock.util.Util;
 
 import java.nio.ByteBuffer;
-
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_FACE_NOT_FOUND;
 
 public class CameraFaceAuthController {
     private static final int CAM_MSG_ERROR = 101;

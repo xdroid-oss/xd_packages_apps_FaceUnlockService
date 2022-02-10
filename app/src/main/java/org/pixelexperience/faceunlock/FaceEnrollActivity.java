@@ -1,5 +1,20 @@
 package org.pixelexperience.faceunlock;
 
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_DARKLIGHT;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_FACE_BLUR;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_FACE_MULTI;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_FACE_NOT_COMPLETE;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_FACE_OFFSET_LEFT;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_FACE_OFFSET_RIGHT;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_FACE_ROTATED_LEFT;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_FACE_ROTATED_RIGHT;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_FACE_SCALE_TOO_LARGE;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_FACE_SCALE_TOO_SMALL;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_FAILED;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_HALF_SHADOW;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_HIGHLIGHT;
+import static org.pixelexperience.faceunlock.vendor.constants.FaceConstants.MG_UNLOCK_KEEP;
+
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.Intent;
@@ -22,21 +37,6 @@ import org.pixelexperience.faceunlock.util.CircleSurfaceView;
 import org.pixelexperience.faceunlock.util.Settings;
 import org.pixelexperience.faceunlock.util.SharedUtil;
 import org.pixelexperience.faceunlock.util.Util;
-
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_DARKLIGHT;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_FACE_BLUR;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_FACE_MULTI;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_FACE_NOT_COMPLETE;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_FACE_OFFSET_LEFT;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_FACE_OFFSET_RIGHT;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_FACE_ROTATED_LEFT;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_FACE_ROTATED_RIGHT;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_FACE_SCALE_TOO_LARGE;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_FACE_SCALE_TOO_SMALL;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_FAILED;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_HALF_SHADOW;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_HIGHLIGHT;
-import static org.pixelexperience.faceunlock.FaceConstants.MG_UNLOCK_KEEP;
 
 public class FaceEnrollActivity extends FaceBaseActivity {
     private static final String TAG = FaceEnrollActivity.class.getSimpleName();

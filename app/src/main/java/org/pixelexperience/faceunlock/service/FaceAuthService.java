@@ -1,6 +1,8 @@
 package org.pixelexperience.faceunlock.service;
 
-import static android.hardware.biometrics.BiometricConstants.*;
+import static android.hardware.biometrics.BiometricConstants.BIOMETRIC_ERROR_LOCKOUT;
+import static android.hardware.biometrics.BiometricConstants.BIOMETRIC_ERROR_LOCKOUT_PERMANENT;
+import static android.hardware.biometrics.BiometricConstants.BIOMETRIC_ERROR_VENDOR;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -24,11 +26,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-import com.android.internal.util.custom.faceunlock.FaceUnlockUtils;
 import com.android.internal.util.custom.faceunlock.IFaceService;
 import com.android.internal.util.custom.faceunlock.IFaceServiceReceiver;
 
 import org.pixelexperience.faceunlock.AppConstants;
+import org.pixelexperience.faceunlock.R;
 import org.pixelexperience.faceunlock.camera.CameraFaceAuthController;
 import org.pixelexperience.faceunlock.camera.CameraFaceEnrollController;
 import org.pixelexperience.faceunlock.camera.CameraUtil;
@@ -36,7 +38,8 @@ import org.pixelexperience.faceunlock.util.NotificationUtils;
 import org.pixelexperience.faceunlock.util.Settings;
 import org.pixelexperience.faceunlock.util.SharedUtil;
 import org.pixelexperience.faceunlock.util.Util;
-import org.pixelexperience.faceunlock.vendor.FacePPImpl;
+import org.pixelexperience.faceunlock.vendor.VendorFaceManager;
+import org.pixelexperience.faceunlock.vendor.impl.VendorFaceManagerImpl;
 
 import java.util.Random;
 
@@ -58,7 +61,7 @@ public class FaceAuthService extends Service {
     private long mChallenge = 0;
     private int mChallengeCount = 0;
     private byte[] mEnrollToken;
-    private FacePPImpl mFaceAuth;
+    private VendorFaceManager mFaceAuth;
     private PendingIntent mIdleTimeoutIntent;
     private boolean mOnIdleTimer;
     private Integer mLockoutType = LOCKOUT_TYPE_DISABLED;
@@ -284,7 +287,7 @@ public class FaceAuthService extends Service {
         handlerThread.start();
         mWorkHandler = new FaceHandler(handlerThread.getLooper());
         mShareUtil = new SharedUtil(this);
-        mFaceAuth = new FacePPImpl(this);
+        mFaceAuth = new VendorFaceManagerImpl(this, getResources().getBoolean(R.bool.use_alternative_vendor_impl));
         mUserId = Util.getUserId(this);
         if (!Util.isFaceUnlockDisabledByDPM(this) && Util.isFaceUnlockEnrolled(this)) {
             mWorkHandler.post(() -> mFaceAuth.init());
