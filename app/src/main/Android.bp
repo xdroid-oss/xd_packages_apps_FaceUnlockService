@@ -19,6 +19,7 @@ android_app {
     static_libs: [
         "androidx.annotation_annotation",
         "androidx.appcompat_appcompat",
+        "lottie",
         "faceunlock_framework",
         "faceunlock_vendor_framework",
     ],

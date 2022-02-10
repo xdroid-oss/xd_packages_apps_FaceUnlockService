@@ -2,7 +2,6 @@ package org.pixelexperience.faceunlock.service;
 
 import static android.hardware.biometrics.BiometricConstants.*;
 
-import android.annotation.NonNull;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -21,8 +20,11 @@ import android.os.RemoteException;
 import android.os.SystemClock;
 import android.util.Log;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
+import com.android.internal.util.custom.faceunlock.FaceUnlockUtils;
 import com.android.internal.util.custom.faceunlock.IFaceService;
 import com.android.internal.util.custom.faceunlock.IFaceServiceReceiver;
 
@@ -31,6 +33,7 @@ import org.pixelexperience.faceunlock.camera.CameraFaceAuthController;
 import org.pixelexperience.faceunlock.camera.CameraFaceEnrollController;
 import org.pixelexperience.faceunlock.camera.CameraUtil;
 import org.pixelexperience.faceunlock.util.NotificationUtils;
+import org.pixelexperience.faceunlock.util.Settings;
 import org.pixelexperience.faceunlock.util.SharedUtil;
 import org.pixelexperience.faceunlock.util.Util;
 import org.pixelexperience.faceunlock.vendor.FacePPImpl;
@@ -287,8 +290,8 @@ public class FaceAuthService extends Service {
             mWorkHandler.post(() -> mFaceAuth.init());
         }
         mAlarmManager = getSystemService(AlarmManager.class);
-        mIdleTimeoutIntent = PendingIntent.getBroadcast(getApplicationContext(), 0, new Intent(ALARM_TIMEOUT_FREEZED), 0);
-        mLockoutTimeoutIntent = PendingIntent.getBroadcast(getApplicationContext(), 0, new Intent(ALARM_FAIL_TIMEOUT_LOCKOUT), 0);
+        mIdleTimeoutIntent = PendingIntent.getBroadcast(getApplicationContext(), 0, new Intent(ALARM_TIMEOUT_FREEZED), PendingIntent.FLAG_MUTABLE);
+        mLockoutTimeoutIntent = PendingIntent.getBroadcast(getApplicationContext(), 0, new Intent(ALARM_FAIL_TIMEOUT_LOCKOUT), PendingIntent.FLAG_MUTABLE);
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(ALARM_TIMEOUT_FREEZED);
         intentFilter.addAction(ALARM_FAIL_TIMEOUT_LOCKOUT);
@@ -520,7 +523,14 @@ public class FaceAuthService extends Service {
             if (Util.DEBUG) {
                 Log.d(FaceAuthService.TAG, "authenticate");
             }
-            if (Util.isFaceUnlockDisabledByDPM(FaceAuthService.this)) {
+            if (!Settings.isFaceUnlockAvailable(FaceAuthService.this) ||
+                    ContextCompat.checkSelfPermission(FaceAuthService.this.getApplicationContext(), "android.permission.CAMERA") != 0) {
+                try {
+                    mFaceReceiver.onError(5, 0);
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }else if (Util.isFaceUnlockDisabledByDPM(FaceAuthService.this)) {
                 try {
                     mFaceReceiver.onError(5, 0);
                 } catch (RemoteException e) {
@@ -558,7 +568,11 @@ public class FaceAuthService extends Service {
                 mShareUtil.removeSharePreferences(AppConstants.SHARED_KEY_ENROLL_TOKEN);
                 Util.setFaceUnlockAvailable(getApplicationContext());
                 try {
-                    mFaceReceiver.onRemoved(new int[]{i}, mUserId);
+                    if (i == 0) {
+                        mFaceReceiver.onRemoved(new int[]{intValue}, mUserId);
+                    } else {
+                        mFaceReceiver.onRemoved(new int[]{i}, mUserId);
+                    }
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }
@@ -567,13 +581,20 @@ public class FaceAuthService extends Service {
 
         @Override
         public int enumerate() {
-            if (Util.DEBUG) {
-                Log.d(FaceAuthService.TAG, "enumerate");
-            }
             int intValue = mShareUtil.getIntValueByKey(AppConstants.SHARED_KEY_FACE_ID);
             final int[] iArr = intValue > -1 ? new int[]{intValue} : new int[0];
             mWorkHandler.post(() -> {
                 try {
+                    if (Util.DEBUG) {
+                        Log.d(TAG, "enumerate mFaceReceiver = " + mFaceReceiver);
+                    }
+                    if (mFaceReceiver == null) {
+                        try {
+                            Thread.sleep(50);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
                     if (mFaceReceiver != null) {
                         mFaceReceiver.onEnumerate(iArr, mUserId);
                     }

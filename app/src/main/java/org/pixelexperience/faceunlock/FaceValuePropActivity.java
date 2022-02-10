@@ -8,10 +8,11 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 
 import org.pixelexperience.faceunlock.util.Util;
-import org.pixelexperience.faceunlock.widget.VideoListener;
+
+import com.airbnb.lottie.LottieAnimationView;
 
 public class FaceValuePropActivity extends Activity implements View.OnClickListener {
-    private VideoListener mVideoListener;
+    private LottieAnimationView mVideo;
 
     @Override
     protected void onCreate(@Nullable Bundle bundle) {
@@ -21,10 +22,8 @@ public class FaceValuePropActivity extends Activity implements View.OnClickListe
         btnCancel.setOnClickListener(this);
         Button btnNext = findViewById(R.id.vp_next);
         btnNext.setOnClickListener(this);
-        mVideoListener = new VideoListener(this,
-                findViewById(R.id.video),
-                Util.isNightModeEnabled(this) ? R.raw.video_value_prop_dark : R.raw.video_value_prop,
-                true);
+        mVideo = (LottieAnimationView) findViewById(R.id.video);
+        mVideo.setAnimation(Util.isNightModeEnabled(this) ? R.raw.video_value_prop_dark : R.raw.video_value_prop);
     }
 
     @Override
@@ -41,14 +40,12 @@ public class FaceValuePropActivity extends Activity implements View.OnClickListe
     @Override
     protected void onResume() {
         super.onResume();
-        if (mVideoListener != null) {
-            mVideoListener.startVideo();
-        }
+        mVideo.playAnimation();
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        mVideoListener.stopVideo();
+        mVideo.cancelAnimation();
     }
 }

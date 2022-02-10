@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <ScrollView
@@ -21,12 +22,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="@dimen/help_video_height"
                 android:layout_below="@id/iv_top_icon">
-
-                <TextureView
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_gravity="center"
                     android:id="@+id/video"
                     android:layout_width="@dimen/help_video_width"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_height="match_parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
             </FrameLayout>
 
             <TextView

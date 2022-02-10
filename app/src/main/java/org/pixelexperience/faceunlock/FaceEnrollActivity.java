@@ -247,7 +247,9 @@ public class FaceEnrollActivity extends FaceBaseActivity {
             mCameraEnrollService = CameraFaceEnrollController.getInstance();
             mCameraEnrollService.setSurfaceHolder(mSurface.getHolder());
         }
-        mFaceManager.enroll(Util.getUserId(this), mToken, mEnrollmentCancel, mEnrollmentCallback, new int[]{1});
+        if (mToken != null && mToken.length > 0) {
+            mFaceManager.enroll(Util.getUserId(this), mToken, mEnrollmentCancel, mEnrollmentCallback, new int[]{1});
+        }
         mCameraEnrollService.start(mCameraCallback, 15000);
         mFaceEnrollMsg = findViewById(R.id.face_msg);
         findViewById(R.id.enroll_done).setOnClickListener(view -> {
