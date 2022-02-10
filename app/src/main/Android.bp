@@ -26,7 +26,7 @@ android_app {
     required: [
         "privapp-permissions-org.pixelexperience.faceunlock",
         "hiddenapi-whitelist-org.pixelexperience.faceunlock",
-        "faceunlock_dependencies",
+        "faceunlock_vendor_dependencies",
     ],
 }
 

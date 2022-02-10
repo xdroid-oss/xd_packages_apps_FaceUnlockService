@@ -1,3 +1,4 @@
 include ':app'
 rootProject.name = "FaceUnlockService"
 include ':FaceUnlockVendor'
+include ':FaceUnlockFramework'
