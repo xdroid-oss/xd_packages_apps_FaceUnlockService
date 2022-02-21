@@ -14,4 +14,21 @@
     <string name="facelock_setup_notification_text">ಮುಖ ಗುರುತು ಸಂಯೋಜಿಸಿ</string>
     <string name="facelock_setup_notification_title">ದೃಷ್ಟಿಸಿ ಅನ್ಲಾಕ್ ಮಾಡಿ</string>
     <string name="face_camera_content">ಮುಖವನ್ನು ಹೊಂದಿಸಿ</string>
+    <string name="face_camera_content_tip">ನಿಮ್ಮ ಮುಖವು ಕೆಳಗೆ ಕೇಂದ್ರೀಕೃತವಾಗಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ. ನಿಮ್ಮ ಮುಖವನ್ನು ಚೆನ್ನಾಗಿ ಬೆಳಗಿದ ಸ್ಥಳದಲ್ಲಿ ಇರಿಸಿ ಮತ್ತು ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ನೇರವಾಗಿ ನೋಡಿ.</string>
+    <string name="face_next_content">ಸಿದ್ಧವಾಗಿದೆ!</string>
+    <string name="face_next_content_tip">"ಈಗ ನೀವು ನಿಮ್ಮ ಮುಖವನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಿದ್ದೀರಿ, ನಿಮ್ಮ ಫೋನ್ ಅನ್ನು ಕೇವಲ ಒಂದು ನೋಟದಲ್ಲಿ ಅನ್‌ಲಾಕ್ ಮಾಡಬಹುದು."</string>
+    <string name="face_try_content">ಏನೋ ಅಡಚಣೆ ಉಂಟಾಗಿದೆ</string>
+    <string name="face_try_content_tip">"ಫೇಸ್ ಸ್ಕ್ಯಾನ್ ವಿಫಲವಾಗಿದೆ. ನೀವು ಚೆನ್ನಾಗಿ ಬೆಳಗಿದ ಸ್ಥಳದಲ್ಲಿ ಮತ್ತು ಕ್ಯಾಮರಾವನ್ನು ನೋಡುತ್ತಿರುವಿರಿ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ."</string>
+    <string name="perm_required_alert_button_app_info">ಅಪ್ಲಿಕೇಶನ್ ಮಾಹಿತಿ</string>
+    <string name="perm_required_alert_msg">ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿ ಕೆಲವು ವಿಷಯಗಳನ್ನು ಪ್ರವೇಶಿಸಲು ಫೇಸ್ ಅನ್‌ಲಾಕ್‌ಗೆ ಅನುಮತಿಯ ಅಗತ್ಯವಿದೆ. ಸಕ್ರಿಯಗೊಳಿಸಲು ಅಪ್ಲಿಕೇಶನ್ ಮಾಹಿತಿಯಲ್ಲಿ \"ಅನುಮತಿಗಳು\" ಆಯ್ಕೆಮಾಡಿ.</string>
+    <string name="perm_required_alert_title">ಅನುಮತಿಗಳ ಅಗತ್ಯವಿದೆ</string>
+    <string name="policy_disabled_alert_msg">ನಿರ್ವಾಹಕರು ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದ್ದಾರೆ.</string>
+    <string name="title_activity_face_intro">ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಪರಿಚಯ</string>
+    <string name="unlock_failed_face_blur">ಮುಖ ತುಂಬಾ ಅಸ್ಪಷ್ಟವಾಗಿದೆ</string>
+    <string name="unlock_failed_face_large">ಮುಖ ತುಂಬಾ ಹತ್ತಿರದಲ್ಲಿದೆ</string>
+    <string name="unlock_failed_face_multi">ಹಲವಾರು ಮುಖಗಳನ್ನು ಪತ್ತೆಹಚ್ಚಲಾಗಿದೆ</string>
+    <string name="unlock_failed_face_not_complete">ಭಾಗಶಃ ಮುಖ ಮಾತ್ರ ಪತ್ತೆಯಾಗಿದೆ</string>
+    <string name="unlock_failed_face_small">ಮುಖ ತುಂಬಾ ದೂರದಲ್ಲಿದೆ</string>
+    <string name="upgrade_finish_summary">"ಈಗ ನೀವು ಫೇಸ್ ಅನ್‌ಲಾಕ್ ಮೂಲಕ ನಿಮ್ಮ ಸಾಧನವನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಲು ಸಿದ್ಧರಾಗಿರುವಿರಿ"</string>
+    <string name="upgrade_finish_title">ಸರಿ!</string>
 </resources>

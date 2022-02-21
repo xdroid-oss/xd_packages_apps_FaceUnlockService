@@ -5,6 +5,8 @@
     <string name="attr_light_high">臉部燈光過亮</string>
     <string name="attr_light_shadow">臉部陰影過多</string>
     <string name="btn_done">完成</string>
+    <string name="btn_try_again">再試一次</string>
+    <string name="btn_next">下一步</string>
     <string name="face_intro_conten_first_point">相較於圖案、PIN 或密碼，臉部辨識的安全性較低</string>
     <string name="face_intro_content_second_point">與您相貌相似的人可能可以解鎖您的手機</string>
     <string name="face_intro_content_third_point">用於辨識您臉部的資料會私密地儲存在您的手機上</string>

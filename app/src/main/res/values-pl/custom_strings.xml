@@ -5,6 +5,8 @@
     <string name="attr_light_high">Na twarz pada zbyt dużo światła</string>
     <string name="attr_light_shadow">Na twarzy widać zbyt dużo cieni</string>
     <string name="btn_done">Gotowe</string>
+    <string name="btn_try_again">Spróbuj ponownie</string>
+    <string name="btn_next">Dalej </string>
     <string name="face_intro_conten_first_point">Funkcja wykrywania twarzy jest mniej bezpieczna niż wzór, PIN czy hasło</string>
     <string name="face_intro_content_second_point">Osoba podobna do Ciebie będzie w stanie odblokować telefon</string>
     <string name="face_intro_content_third_point">Dane służące do identyfikacji twarzy są poufne i zabezpieczone w telefonie</string>

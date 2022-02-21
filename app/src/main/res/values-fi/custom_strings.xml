@@ -5,7 +5,9 @@
     <string name="attr_light_high">Kasvoilla on liikaa valoa</string>
     <string name="attr_light_shadow">Kasvoilla on liikaa varjoja</string>
     <string name="btn_done">Valmis</string>
-    <string name="face_intro_conten_first_point">Kasvojen tunnistus ei ole yhtä turvallinen kuin lukituskuvio, PIN-koodi tai salasana</string>
+    <string name="btn_try_again">Yritä uudelleen</string>
+    <string name="btn_next">Seuraava</string>
+    <string name="face_intro_conten_first_point">Kasvojentunnistus ei ole yhtä turvallinen kuin lukituskuvio, PIN-koodi tai salasana</string>
     <string name="face_intro_content_second_point">Kanssasi samannäköinen henkilö voi avata puhelimesi lukituksen</string>
     <string name="face_intro_content_third_point">Kasvojen tunnistuksessa tarvittavat tiedot säilytetään puhelimessasi luottamuksellisesti</string>
     <string name="face_intro_remember">Muista:</string>

@@ -5,6 +5,8 @@
     <string name="attr_light_high">სახეს აქვს ზედმეტად ბევრი შუქი</string>
     <string name="attr_light_shadow">სახეს აქვს ზედმეტად ბევრი ჩრდილები</string>
     <string name="btn_done">დასრულდა</string>
+    <string name="btn_try_again">კიდევ სცადეთ</string>
+    <string name="btn_next">შემდეგი</string>
     <string name="face_intro_conten_first_point">სახით განბლოკვა არის ნაკლებად დაცული ვიდრე ნიმუში, პინი, ან პაროლი</string>
     <string name="face_intro_content_second_point">ვინმემ ვინც გგავთ თქვენ შესაძლოა მოხსნას თქვენი ტელეფონის ბლოკი</string>
     <string name="face_intro_content_third_point">ინფორმაცია რომელიც გამოყენებული იქნა თქვენი სახის ამოსაცნობად რჩება დაცული თქვენს ტელეფონში</string>
