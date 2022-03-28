@@ -5,14 +5,27 @@
     <string name="attr_light_high">A faciana ten luz de máis </string>
     <string name="attr_light_shadow">A faciana ten sombras de máis </string>
     <string name="btn_done">Feito</string>
+    <string name="btn_try_again">Téntao de novo</string>
+    <string name="btn_next">Seguinte</string>
     <string name="face_intro_conten_first_point">A coincidencia facial é menos segura que un padrón, un PIN ou un contrasinal</string>
     <string name="face_intro_content_second_point">Alguén que se lle pareza pode desbloquear o seu teléfono </string>
     <string name="face_intro_content_third_point">Os datos empregados para recoñecer a túa faciana mantéñense privados no teu teléfono</string>
     <string name="face_intro_remember">Lembre:</string>
     <string name="face_intro_summary">Desbloquea o teu teléfono mirándoo.</string>
     <string name="face_intro_title">Acerca do desbloqueo facial</string>
+    <string name="facelock_setup_notification_text">Configura o desbloqueo facial</string>
+    <string name="facelock_setup_notification_title">Desbloquea cunha ollada</string>
+    <string name="face_camera_content">Aliña o teu rostro</string>
+    <string name="face_camera_content_tip">Asegúrase de que o seu rostro estea centrado abaixo.Manteña a faz ben iluminada e olle directamente para o teléfono.</string>
+    <string name="face_next_content">Todo listo</string>
+    <string name="face_try_content">Algo fallou</string>
+    <string name="face_try_content_tip">"Fallou a dixitalización facial.  Asegúrate de estar ben iluminado e mirando á cámara."</string>
+    <string name="perm_required_alert_button_app_info">Info. da aplicación</string>
+    <string name="perm_required_alert_title">Requírense permisos</string>
     <string name="policy_disabled_alert_msg">O desbloqueo facial foi desactivado polo administrador.</string>
+    <string name="unlock_failed_face_blur">O rostro está demasiado borroso</string>
     <string name="unlock_failed_face_multi">Facianas detectadas de máis</string>
     <string name="unlock_failed_face_not_complete">Só faciana parcial detectada</string>
     <string name="unlock_failed_face_small">A faciana está moi lonxe</string>
+    <string name="upgrade_finish_title">¡Todo listo!</string>
 </resources>

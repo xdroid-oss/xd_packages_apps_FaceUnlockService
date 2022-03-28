@@ -5,6 +5,8 @@
     <string name="attr_light_high">顔に照明があたり過ぎています</string>
     <string name="attr_light_shadow">顔に影がかかっています</string>
     <string name="btn_done">完了</string>
+    <string name="btn_try_again">再試行</string>
+    <string name="btn_next">次へ</string>
     <string name="face_intro_conten_first_point">顔認証は、パターン、PINまたはパスワードよりも安全ではありません</string>
     <string name="face_intro_content_second_point">よく似ている人が電話をロック解除できてしまう可能性があります</string>
     <string name="face_intro_content_third_point">顔の認識に使用したデータは電話で非公開にされます</string>
@@ -22,8 +24,8 @@
     <string name="perm_required_alert_button_app_info">アプリ情報</string>
     <string name="perm_required_alert_msg">「顔認証でロック解除」は、端末上の一部の機能やデータにアクセスするために権限が必要です。有効にするには「アプリ情報」で「許可」を選択して下さい。</string>
     <string name="perm_required_alert_title">許可が必要です</string>
-    <string name="policy_disabled_alert_msg">フェイスアンロックは管理者によって無効にされています。</string>
-    <string name="title_activity_face_intro">フェイスアンロックの紹介</string>
+    <string name="policy_disabled_alert_msg">顔ロック解除は管理者によって無効にされています。</string>
+    <string name="title_activity_face_intro">顔認証ロック解除の説明</string>
     <string name="unlock_failed_face_blur">顔がぼやけています</string>
     <string name="unlock_failed_face_large">顔が近すぎます</string>
     <string name="unlock_failed_face_multi">複数の顔が検出されました</string>

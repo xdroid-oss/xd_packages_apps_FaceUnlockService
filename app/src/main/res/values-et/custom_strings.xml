@@ -5,6 +5,8 @@
     <string name="attr_light_high">Nägu on ülevalgustatud</string>
     <string name="attr_light_shadow">Näol on liiga palju varje</string>
     <string name="btn_done">Valmis</string>
+    <string name="btn_try_again">Proovi uuesti</string>
+    <string name="btn_next">Järgmine</string>
     <string name="face_intro_conten_first_point">Näotuvastus on vähem turvaline kui muster, PIN-kood või parool</string>
     <string name="face_intro_content_second_point">Väliselt sarnased inimesed võivad saada avada Teie telefoni</string>
     <string name="face_intro_content_third_point">Teie näo tuvastamiseks kasutatavaid andmeid hoitakse Teie telefonis</string>

@@ -5,6 +5,8 @@
     <string name="attr_light_high">Per daug šviesos veidui</string>
     <string name="attr_light_shadow">Per daug šešėlio krenta ant veido</string>
     <string name="btn_done">Atlikta</string>
+    <string name="btn_try_again">Bandyk iš naujo</string>
+    <string name="btn_next">Sekantis</string>
     <string name="face_intro_conten_first_point">Veido atitikimas yra mažiau saugus nei ,grafinis raktas PIN kodas ar slaptažodis</string>
     <string name="face_intro_content_second_point">Kažkas panašus į jus gali atrakinti telefoną</string>
     <string name="face_intro_content_third_point">Duomenys, naudojami jūsų veidui atpažinti, jūsų telefone laikomi privačiais</string>
@@ -13,6 +15,15 @@
     <string name="face_intro_title">Apie veido atrakinimą</string>
     <string name="facelock_setup_notification_text">Nustatykite veido atrakinimą</string>
     <string name="facelock_setup_notification_title">Atrakinkite žvilgsniu</string>
+    <string name="face_camera_content">Išlyginkite veido padėtį</string>
+    <string name="face_camera_content_tip">Jūsų veidas turi būti gerai apšviestas ir centre. Žiūrėkite tiesiai į savo telefono kamerą.</string>
+    <string name="face_next_content">Viskas nustatyta.</string>
+    <string name="face_next_content_tip">"Baigėte veido nuskaitymą ir dabar galite atrakinti telefoną tiesiog pažvelgę ​​į jį."</string>
+    <string name="face_try_content">Įvyko klaida</string>
+    <string name="face_try_content_tip">"Nepavyko atlikti veido nuskaitymo. Įsitikinkite, kad jūsų veidas yra gerai apšviestas ir žiūrite tiesiai į fotoaparatą."</string>
+    <string name="perm_required_alert_button_app_info">Programos informacija </string>
+    <string name="perm_required_alert_msg">Atrakinimo pagal veidą funkcijai reikalingas leidimas pasiekti kai kuriuos įrenginio duomenis. Programos informacijos skiltyje pasirinkite „Leidimai“, kad įgalintumėte funkciją.</string>
+    <string name="perm_required_alert_title">Reikalingi leidimai</string>
     <string name="policy_disabled_alert_msg">Administratorius išjungė veido atpažinimo užraktą.</string>
     <string name="title_activity_face_intro">Įvadas į veido atpažinimo užraktą</string>
     <string name="unlock_failed_face_blur">Veidas labai neryškus</string>

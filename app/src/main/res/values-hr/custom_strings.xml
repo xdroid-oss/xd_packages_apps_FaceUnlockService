@@ -5,6 +5,8 @@
     <string name="attr_light_high">Lice je previše osvijetljeno</string>
     <string name="attr_light_shadow">Na licu je previše sjena</string>
     <string name="btn_done">Gotovo</string>
+    <string name="btn_try_again">Pokušaj ponovno</string>
+    <string name="btn_next">Dalje</string>
     <string name="face_intro_conten_first_point">Prepoznavanje lica manje je sigurno od uzorka, PIN-a ili lozinke</string>
     <string name="face_intro_content_second_point">Netko tko izgleda poput vas mogao bi otključati vaš telefon</string>
     <string name="face_intro_content_third_point">Podaci koji se upotrebljavaju za prepoznavanje lica sigurno su pohranjeni na telefonu</string>
@@ -13,6 +15,15 @@
     <string name="face_intro_title">O otključavanju s pomoću lica</string>
     <string name="facelock_setup_notification_text">Postavite otključavanje prepoznavanjem lica</string>
     <string name="facelock_setup_notification_title">Otključavanje pogledom</string>
+    <string name="face_camera_content">Poravnajte lice</string>
+    <string name="face_camera_content_tip">Provjerite je li vam lice centrirano u nastavku. Dobro osvijetlite lice i gledajte izravno u telefon.</string>
+    <string name="face_next_content">Sve je spremno</string>
+    <string name="face_next_content_tip">"Vaše je lice sada skenirano i možete otključati telefon pogledom."</string>
+    <string name="face_try_content">Nešto nije u redu</string>
+    <string name="face_try_content_tip">"Skeniranje lica nije uspjelo. Trebate biti dobro osvijetljeni i gledati u fotoaparat."</string>
+    <string name="perm_required_alert_button_app_info">Informacije o aplikaciji</string>
+    <string name="perm_required_alert_msg">Otključavanje licem treba dopuštenje za pristup nekim stvarima na vašem uređaju. Odaberite \"Dopuštenja\" u informacijama o aplikaciji da biste omogućili.</string>
+    <string name="perm_required_alert_title">Potrebna su dopuštenja</string>
     <string name="policy_disabled_alert_msg">Administrator je onemogućio otključavanje prepoznavanjem lica.</string>
     <string name="title_activity_face_intro">Uvod u otključavanje prepoznavanjem lica</string>
     <string name="unlock_failed_face_blur">Lice je previše zamućeno</string>

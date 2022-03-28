@@ -5,6 +5,8 @@
     <string name="attr_light_high">Обличчя надто сильно освітлене</string>
     <string name="attr_light_shadow">Обличчя надто затінене</string>
     <string name="btn_done">Готово</string>
+    <string name="btn_try_again">Спробуйте ще раз</string>
+    <string name="btn_next">Далі</string>
     <string name="face_intro_conten_first_point">Розпізнавання обличчя є менш надійним, ніж графічний ключ, PIN-код чи пароль</string>
     <string name="face_intro_content_second_point">Будь-хто, схожий на вас, зможе розблокувати ваш телефон</string>
     <string name="face_intro_content_third_point">Дані, які використовуються для розпізнавання вашого обличчя, зберігаються у вашому телефоні на умовах конфіденційності</string>

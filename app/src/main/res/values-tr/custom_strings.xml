@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Yüz tanıma kilidi</string>
-    <string name="attr_light_dark">Yüze daha fazla ışık gerekli</string>
+    <string name="attr_light_dark">Yüzün daha fazla ışığa ihtiyacı var</string>
     <string name="attr_light_high">Yüze çok fazla ışık vuruyor</string>
     <string name="attr_light_shadow">Yüze çok fazla gölge düşüyor</string>
     <string name="btn_done">Bitti</string>
+    <string name="btn_try_again">Tekrar deneyin</string>
+    <string name="btn_next">Sonraki</string>
     <string name="face_intro_conten_first_point">Yüz eşleştirme; desen, PIN veya şifre yöntemleri kadar güvenli değildir</string>
     <string name="face_intro_content_second_point">Size benzeyen biri telefonunuzun kilidini açabilir</string>
     <string name="face_intro_content_third_point">Yüzünüzün tanınması için kullanılan veriler telefonunuzda gizli tutulur</string>
@@ -13,8 +15,8 @@
     <string name="face_intro_title">Yüz tanıma kilidi hakkında</string>
     <string name="facelock_setup_notification_text">Yüz tanıma kilidini ayarlayın</string>
     <string name="facelock_setup_notification_title">Tek bakışla kilit açın</string>
-    <string name="face_camera_content">Yüzünüzü yerleşdirin</string>
-    <string name="face_camera_content_tip">Yüzünüzü aşağıda ortaladığınızdan emin olun. Yüzünüzü aydınlatın ve doğrudan telefona bakın.</string>
+    <string name="face_camera_content">Yüzünüzü yerleştirin</string>
+    <string name="face_camera_content_tip">Yüzünüzün aşağıda ortalandığından emin olun. Yüzünüzü iyi aydınlatın ve doğrudan telefonunuza bakın.</string>
     <string name="face_next_content">Her şey hazır</string>
     <string name="face_next_content_tip">"Artık yüzünüzü taradığınıza göre, telefonunuzun kilidini bir bakışta açabilirsiniz."</string>
     <string name="face_try_content">Bir şeyler ters gitti</string>
@@ -23,12 +25,12 @@
     <string name="perm_required_alert_msg">Yüz tanıma kilidinin, cihazınızdaki belirli şeylere erişmek için izne ihtiyacı var. Uygulama bilgilerinde \"İzinler\" i seçerek etkinleştirin.</string>
     <string name="perm_required_alert_title">İzinler gerekli</string>
     <string name="policy_disabled_alert_msg">Yüz tanıma kilidi, yönetici tarafından devre dışı bırakıldı.</string>
-    <string name="title_activity_face_intro">Yüz tanıma kilidine giriş</string>
+    <string name="title_activity_face_intro">Yüz kilidi açma tanıtımı</string>
     <string name="unlock_failed_face_blur">Yüz çok bulanık</string>
     <string name="unlock_failed_face_large">Yüz çok yakın</string>
     <string name="unlock_failed_face_multi">Çok sayıda yüz algılandı</string>
     <string name="unlock_failed_face_not_complete">Yüzün sadece bir kısmı algılandı</string>
     <string name="unlock_failed_face_small">Yüz çok uzakta</string>
-    <string name="upgrade_finish_summary">"Artık cihazınızın kilidini Yüz tanıma kilidiyle açmaya hazırsınız"</string>
+    <string name="upgrade_finish_summary">"Artık cihazınızın kilidini Yüz tanıma aracılığıyla açmaya hazırsınız"</string>
     <string name="upgrade_finish_title">İşte bu kadar!</string>
 </resources>

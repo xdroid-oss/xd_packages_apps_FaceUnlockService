@@ -5,6 +5,8 @@
     <string name="attr_light_high">Üzdə həddən çox işıq var</string>
     <string name="attr_light_shadow">Üzdə həddən çox kölgə var</string>
     <string name="btn_done">Hazırdır</string>
+    <string name="btn_try_again">Yenidən sınayın</string>
+    <string name="btn_next">Növbəti</string>
     <string name="face_intro_conten_first_point">Üz uyğunluğu naxış, PIN və ya şifrədən daha az təhlükəsizdir</string>
     <string name="face_intro_content_second_point">Sizə bənzəyən biri telefonunuzun kilidini aça bilər</string>
     <string name="face_intro_content_third_point">Üz tanıma üçün istifadə edilən verilərlər telefonunuzda gizli olaraq saxlanılır</string>

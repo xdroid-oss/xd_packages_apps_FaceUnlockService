@@ -5,6 +5,8 @@
     <string name="attr_light_high">Obličej je přesvícený</string>
     <string name="attr_light_shadow">Na obličeji je příliš mnoho stínů</string>
     <string name="btn_done">Hotovo</string>
+    <string name="btn_try_again">Zkusit znovu</string>
+    <string name="btn_next">Další</string>
     <string name="face_intro_conten_first_point">Rozpoznávání obličeje je méně bezpečné než gesto, kód PIN či heslo</string>
     <string name="face_intro_content_second_point">Telefon by mohl odemknout někdo, kdo vypadá jako vy</string>
     <string name="face_intro_content_third_point">Data použitá k rozpoznávání obličeje jsou důvěrně uchována ve vašem telefonu</string>

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Откључавање лицем</string>
-    <string name="attr_light_dark">Потребно је да лице буде више осветљено</string>
+    <string name="attr_light_dark">Лице је недовољно осветљено</string>
     <string name="attr_light_high">Лице је превише осветљено</string>
     <string name="attr_light_shadow">На лицу има превише сенки</string>
     <string name="btn_done">Готово</string>
-    <string name="face_intro_conten_first_point">Препознавање лица је мање безбедно од шаблона, PIN кода или лозинке</string>
+    <string name="btn_try_again">Покушај поново</string>
+    <string name="btn_next">Следеће</string>
+    <string name="face_intro_conten_first_point">Препознавање лица је мање безбедно од шаблона, PIN-а или лозинке</string>
     <string name="face_intro_content_second_point">Неко ко личи на вас би могао да откључа телефон</string>
     <string name="face_intro_content_third_point">Подаци за препознавање лица се безбедно чувају на вашем телефону</string>
     <string name="face_intro_remember">Запамтите:</string>
@@ -13,6 +15,15 @@
     <string name="face_intro_title">О откључавању лицем</string>
     <string name="facelock_setup_notification_text">Подесите откључавање лицем</string>
     <string name="facelock_setup_notification_title">Откључавање погледом</string>
+    <string name="face_camera_content">Центрирајте лице</string>
+    <string name="face_camera_content_tip">Ваше лице треба да буде добро осветљено и центрирано. Гледајте право у камеру телефона.</string>
+    <string name="face_next_content">Све је спремно</string>
+    <string name="face_next_content_tip">"Завршили сте скенирање лица и сада можете да откључате телефон једним погледом."</string>
+    <string name="face_try_content">Нешто није у реду</string>
+    <string name="face_try_content_tip">"Скенирање лица није успело. Проверите осветљење и гледајте право у камеру."</string>
+    <string name="perm_required_alert_button_app_info">Информације о апликацији</string>
+    <string name="perm_required_alert_msg">Откључавање лицем захтева дозволу за приступ одређеним подацима на вашем уређају. Да бисте укључили функцију, изаберите „Дозволе” у информацијама о апликацији.</string>
+    <string name="perm_required_alert_title">Потребне су дозволе</string>
     <string name="policy_disabled_alert_msg">Администратор је онемогућио откључавање лицем.</string>
     <string name="title_activity_face_intro">Увод у откључавање лицем</string>
     <string name="unlock_failed_face_blur">Лице је превише замагљено</string>

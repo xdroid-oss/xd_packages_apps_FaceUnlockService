@@ -5,6 +5,8 @@
     <string name="attr_light_high">A face tem demasiada luz</string>
     <string name="attr_light_shadow">Face com demasiadas sombras</string>
     <string name="btn_done">Concluído</string>
+    <string name="btn_try_again">Tentar novamente</string>
+    <string name="btn_next">Avançar</string>
     <string name="face_intro_conten_first_point">O desbloqueio facial é menos seguro do que um padrão, PIN ou palavra-passe</string>
     <string name="face_intro_content_second_point">Alguém parecido consigo pode desbloquear o telemóvel</string>
     <string name="face_intro_content_third_point">Os dados utilizados para o reconhecimento da face são mantidos privados no telemóvel</string>

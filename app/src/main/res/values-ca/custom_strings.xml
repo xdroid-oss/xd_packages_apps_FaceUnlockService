@@ -5,6 +5,8 @@
     <string name="attr_light_high">Hi ha massa llum a la cara</string>
     <string name="attr_light_shadow">Hi ha massa ombres a la cara</string>
     <string name="btn_done">Fet</string>
+    <string name="btn_try_again">Tornar-ho a intentar</string>
+    <string name="btn_next">Següent</string>
     <string name="face_intro_conten_first_point">La coincidència facial és menys segura que un patró, un PIN o una contrasenya</string>
     <string name="face_intro_content_second_point">Una persona que se t\'assembli podria desbloquejar el telèfon</string>
     <string name="face_intro_content_third_point">Les dades que s\'utilitzen per identificar la cara s\'emmagatzemen com informació privada al telèfon</string>
@@ -14,10 +16,13 @@
     <string name="facelock_setup_notification_text">Configura el desbloqueig facial</string>
     <string name="facelock_setup_notification_title">Desbloqueja amb una mirada</string>
     <string name="face_camera_content">Centra la cara</string>
+    <string name="face_camera_content_tip">Assegura\'t de tenir la cara ben centrada a baix. Mantén-la ben il·luminada i mira directament al telèfon.</string>
     <string name="face_next_content">Perfecte! Tot fet</string>
     <string name="face_next_content_tip">"Ara que has fet l'escaneig de cara, pots desbloquejar el mòbil amb una simple mirada."</string>
+    <string name="face_try_content">Alguna cosa no ha anat bé</string>
     <string name="face_try_content_tip">"L'escaneig facial ha fallat. Comprova si hi ha bona il·luminació i de mirar a la càmera."</string>
     <string name="perm_required_alert_button_app_info">Informació de l\'aplicació</string>
+    <string name="perm_required_alert_msg">El desbloqueig facial necessita permís per accedir a alguns elements del dispositiu. Selecciona \"Permisos\" a la informació d\'aplicacions per tornar-los a habilitar.</string>
     <string name="perm_required_alert_title">Es requereixen permisos</string>
     <string name="policy_disabled_alert_msg">L\'administrador ha inhabilitat el desbloqueig facial.</string>
     <string name="title_activity_face_intro">Introducció al desbloqueig facial</string>

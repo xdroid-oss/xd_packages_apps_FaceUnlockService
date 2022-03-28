@@ -5,6 +5,8 @@
     <string name="attr_light_high">Az arc túlságosan meg van világítva</string>
     <string name="attr_light_shadow">Az arc túlságosan árnyékos</string>
     <string name="btn_done">Kész</string>
+    <string name="btn_try_again">Próbálja újra</string>
+    <string name="btn_next"> Következő</string>
     <string name="face_intro_conten_first_point">Az arcfelismerés nem annyira biztonságos, mint a feloldási minta, a PIN-kód vagy a jelszó</string>
     <string name="face_intro_content_second_point">Az Önre hasonlító személyek fel tudják oldani a telefont</string>
     <string name="face_intro_content_third_point">Az arcfelismeréshez szükséges adatok a telefonon vannak tárolva, és mások nem láthatják őket</string>
@@ -12,11 +14,11 @@
     <string name="face_intro_summary">A feloldáshoz csak rá kell néznie a telefonra.</string>
     <string name="face_intro_title">További információ az arcalapú feloldásról</string>
     <string name="facelock_setup_notification_text">Az arcalapú feloldás beállítása</string>
-    <string name="facelock_setup_notification_title">Feloldás egyetlen pillantással</string>
+    <string name="facelock_setup_notification_title">Feloldás rápillantással</string>
     <string name="face_camera_content">Igazítsa az arc helyzetét</string>
     <string name="face_camera_content_tip">Ellenőrizze, hogy az arca középen van. Az arca legyen jól megvilágítva és nézzen egyenesen a telefonjára.</string>
     <string name="face_next_content">A beállítás kész!</string>
-    <string name="face_next_content_tip">"Most, hogy sikerült az arc beolvasása, a telefon egyetlen pillantással feloldható."</string>
+    <string name="face_next_content_tip">"Most, hogy sikerült az arc beolvasása, a telefon rápillantással feloldható."</string>
     <string name="face_try_content">Valami nem stimmel</string>
     <string name="face_try_content_tip">"Nem sikerült az arcbeolvasás. Figyeljen arra, hogy legyen jól megvilágítva és nézzen a kamerába."</string>
     <string name="perm_required_alert_button_app_info">Alkalmazásinformáció</string>

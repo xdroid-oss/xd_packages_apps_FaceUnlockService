@@ -5,6 +5,8 @@
     <string name="attr_light_high">הפנים מוארות יותר מדי</string>
     <string name="attr_light_shadow">הפנים מוצללים מדי</string>
     <string name="btn_done">בוצע</string>
+    <string name="btn_try_again">נסה שוב</string>
+    <string name="btn_next">הבא</string>
     <string name="face_intro_conten_first_point">התאמת פנים היא שיטה פחות בטוחה משימוש בתבנית, PIN או סיסמה</string>
     <string name="face_intro_content_second_point">אדם שפניו דומים לשלך עלול לבטל את נעילת הטלפון</string>
     <string name="face_intro_content_third_point">הנתונים המשמשים לזיהוי הפנים נשמרים בפרטיות בטלפון שלך</string>
